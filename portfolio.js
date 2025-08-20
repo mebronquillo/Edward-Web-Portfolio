@@ -2,8 +2,11 @@
 function direct_to_project(){
     const scrolltoproject = document.getElementById("im_the_project");
     scrolltoproject.scrollIntoView({
-        behavior: "smooth"
+        behavior: "smooth",
+        block: "start",
+        inline: "start"
     });
+    
 }
 
 var body = document.body;
