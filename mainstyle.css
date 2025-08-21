@@ -64,6 +64,12 @@ body{
     border-radius: 2px;
 }
 
+@media(max-width: 2800px){
+    .hamburger{
+        display: none;
+    }
+}
+
 a.boxs1{
     justify-content: center;
     text-align: center;
@@ -291,10 +297,10 @@ a.logo:active{
     box-sizing: border-box;
     align-items: stretch;
     margin-top: 0;
-    margin-left: -2.5rem;
+    margin-left: 2.5rem;
     width: calc(100% - 480px);
     height: 100%;
-    background-color: aqua;
+    /* background-color: aqua; */
     column-gap: 5rem;
 }
 .project_items{
@@ -305,6 +311,9 @@ a.logo:active{
     padding: 1em; 
     background: #ff4d00;
     border-radius: 2%;
+}
+.project_items h2{
+    color: whitesmoke;
 }
 
 
