@@ -415,30 +415,4 @@ a.logo:active{
 
 @media(max-width: 425px){
         
-        .myproject_items{
-            width: 100%;
-            height: 100%;
-            position: relative;
-            left: 30%;
-            padding-left: 2rem;
-            padding-right: 2rem;
-            transform: translate(-50%, -5%);
-        }
-        .project_items{
-            width: 100%;
-            height: 70vw;
-        }
-        #inside_title_project{
-        top: 0px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        position: relative;
-        width: 100%;
-        height: 16vh;
-        padding: 1.5rem;
-        background: #ff4d00;;
-        border-radius: 2%;
-        height: 100px;
-        box-shadow: 0 10px 10px rgba(0,0,0,0.2);  
-        }
 }
