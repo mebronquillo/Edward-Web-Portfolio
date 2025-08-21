@@ -5,7 +5,7 @@ body{
 }
 
 .nav_bar{
-    width: calc(100% - 150px);/* 80% */
+    width: 100%;/* 80% */
     /* left: 50% */
     /* transform: translateX(-50%); */
     background-color: rgb(67, 68, 68);
