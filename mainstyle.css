@@ -29,6 +29,7 @@ body{
     justify-content: center;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     column-gap: 1.25rem;
+    width: calc(100% - 0px); /* 80% */
 }
 .inside_navbar h2{
     font-size: 1rem;
