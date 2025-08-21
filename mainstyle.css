@@ -22,6 +22,7 @@ body{
 .spaces{
     height: 110px;
     background-color: rgb(10, 83, 58);
+    width: 100%;    
 }
 
 .inside_navbar{ 
