@@ -251,6 +251,7 @@ a.logo:active{
     padding: 1.5rem;
     background-color: #ff4d00;
     border-radius: 4%;
+    height: 100px;
     box-shadow: 0 10px 10px rgba(0,0,0,0.2);
 }
 
@@ -259,29 +260,104 @@ a.logo:active{
     flex-wrap: wrap;
     box-sizing: border-box;
     align-items: stretch;
-    padding-left: 5rem;
-    row-gap: 10px;
+    margin-top: 0;
+    width: calc(100% - 480px);
+    background-color: aqua;
+    margin-left: 5rem;
+    column-gap: 5rem;
 }
 .project_items{
     display: block;
-    width: 50%;
-    
-}
-.inside_project_items{
-    width: 80%;
-    padding: 1rem;
+    width: 60vh; /*make the boxes looking mobile 100%*/
+    height: 50vh;
+    margin: 0 0 2em 0;
+    padding: 1em; 
     background-color: #ff4d00;
     border-radius: 2%;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
+
+
 .box_1{
     width: 100%;
+    display: block;
+    margin: 0 0 1.5em 0;
     cursor: pointer;
+    text-align: center;
+    position: relative;
+    border-radius: 0.35em;
+    border: 0;
 }
 .box_1 img{
     width: 100%;
     border-radius: 1%;
 }
+
+@media(max-width: 1800px){
+    .project_items{
+        width: 55vh;
+        height: 50vh;
+    }
+    @media(max-width: 1700px){
+        .project_items{
+        width: 48vh;
+        height: 40vh;
+    }  
+    }
+    @media(max-width: 1600px){
+        .project_items{
+        width: 43vh;
+        height: 39vh;
+    }
+    }
+    @media(max-width: 1600px){
+        .project_items{
+        width: 40%;
+        height: 20vw;
+    }
+    .myproject_items{
+        height: 50vw;
+    }
+    }
+    @media(max-width: 1400px){
+        .project_items{
+        width: 50vw;
+        height: 30vw;
+    }
+    }
+    @media(max-width: 1200px){
+        .inside_container_2{
+            display: block;
+        }
+        #inside_title_project{
+        top: 0px;
+        left: 0px;
+        position: relative;
+        height: 16vh;
+        padding: 1.5rem;
+        background-color: #ff4d00;
+        border-radius: 4%;
+        height: 100px;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+        }
+        #title_project{
+        height: 190px;
+        }
+        .myproject_items{
+        width: 70vw;
+        position: relative;
+        left: 50px;  
+        transform: translate(-1%, 15%);
+        }
+        .project_items{
+        width: 100vw; /*make the boxes looking mobile 100%*/
+        height: 40vw;
+        position: relative;
+        }
+        
+    }
+}
+
+
 
 
 
