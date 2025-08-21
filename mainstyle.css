@@ -11,7 +11,9 @@ body{
     /* left: 50% */
     /* transform: translateX(-50%); */
     background-color: rgb(67, 68, 68);
-    
+    display: flex;
+    justify-content: end;
+    align-items: center;
     position: fixed;
     z-index: 1;
     box-shadow: 1px 1px 15px black;
@@ -41,6 +43,25 @@ body{
     column-gap: 1rem;
     justify-content: center;
     text-align: center;
+}
+
+.box1.nav_active{
+    display: flex;
+}
+.hamburger{
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+.hamburger{
+    display: flex;
+}
+.hamburger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
 }
 
 a.boxs1{
@@ -415,8 +436,24 @@ a.logo:active{
 
 
 
-@media(max-width: 425px){
+@media(max-width: 768px){
         #title_project{
         height: 13rem;
+    }
+    .inside_navbar{
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #007bff;
+        flex-direction: column;
+        width: 200px;
+        display: none;
+        padding: 10px 0;
+    }
+    .inside_navbar.nav_active{
+        display: flex;
+    }
+    .hamburger{
+        display: flex;
     }
 }

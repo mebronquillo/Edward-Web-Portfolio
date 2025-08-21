@@ -29,6 +29,10 @@ function close_nav1(){
     document.getElementById("nav_contact_id").style.width = "0%";
 }
 
+function toggleMenu(){
+    document.getElementById("nav_Menu").classList.toggle("nav_active");
+}
+
 
 
 
