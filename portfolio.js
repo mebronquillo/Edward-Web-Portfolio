@@ -22,7 +22,7 @@ function close_nav(){
 
 
 function direct_to_contactme(){
-    document.getElementById("nav_contact_id").style.width = "500px";
+    document.getElementById("nav_contact_id").style.width = "300px";
 }
 
 function close_nav1(){
