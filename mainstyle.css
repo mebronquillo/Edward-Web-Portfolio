@@ -25,7 +25,6 @@ body{
 }
 
 .inside_navbar{ 
-    position: relative;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4, minmax(0, 1fr));
