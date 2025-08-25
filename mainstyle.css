@@ -8,8 +8,6 @@ body{
     width: 100%;
     padding-bottom: 2rem;
     padding-top: 2rem;
-    /* left: 50% */
-    /* transform: translateX(-50%); */
     background-color: rgb(67, 68, 68);
     display: flex;
     justify-content: end;
@@ -20,8 +18,8 @@ body{
 }
 
 .spaces{
-    height: 110px;
-    background-color: rgb(10, 83, 58);
+    height: 145px;
+    background-color: rgb(255, 255, 255);
     width: 100%;    
 }
 
@@ -138,130 +136,31 @@ body.dont_scroll{
 .container_1{
     margin-top: 0;
     height: 100%;
-    position: relative;
-    background-color: rgb(237, 243, 243);
+    background-color: rgb(255, 255, 255);
 }
-.background_img{
-    width: auto;
-    height: 450px;
-    background-position: bottom;
-    background-size: cover;
-    background-attachment: fixed;
-    background-image: url("images/container_1/img1_1.jpg");
-    color: aliceblue;
-    display: flex;
+.inside_container_1{
     justify-content: center;
-    align-items: center;
-    
+    padding: 2rem;
+    display: grid;
 }
-
-.profile_img{
-    width: 100%;
-    height: 100%;
-}
-
-.profile_img_inside{
-    justify-content: center;
-    position: absolute;
-    top: 440px;
-    align-items: center;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    filter: drop-shadow(1px 1px 5px black);
-    
-    
-}
-.profile_img_inside img{
+.profile_pic img{
     width: 250px;
-    border-radius: 20%;
-    position: relative;
-    top: 3px;
-    overflow: auto;
-    border-style: solid;
     border-radius: 50%;
+    border-style: solid;
+    border-color: rgba(41, 41, 41, 0.3);
     border-width: 5px;
-    border-color: rgba(50, 16, 16, 0.37);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
 }
 
-.content_container1{
-    width: 100%;
-    height: 150%;
-    box-shadow: 0px -20px 30px rgba(50, 50, 50, 0.75);
-}
-
-.myName{
-    text-align: center;
-    position: relative;
-    top: 9rem;
-    width: calc(100% - 150px);
-    left: 50%;
-    transform: translateX(-50%);
-}
-.myName1{
+.text_inside_container_1{
     display: flex;
-    justify-content: center;
     column-gap: 1rem;
 }
-.myName h2{
-    font-size: 2.5rem;
-    color: rgb(68, 68, 68);
-}
 
-@media(max-width: 1200px){
-    .myName1{
-        
-        
-    }
-    
-}
-
-.ClickMe{
-    display: flex;
-    column-gap: 3rem;
-    justify-content: center;
-}
-.ClickMe a{
-    text-decoration: none;
-    color: rgb(65, 65, 65);
-}
-
-a.logo{
-    box-shadow: 0 4px 6px rgba(255, 68, 0, 0.2);
-    transition: transform 1s ease, box-shadow 1s ease, background 1s ease;
-}
-a.logo:hover{
-    transform: translateY(-6px);
-    box-shadow: 0 8px 14px rgba(0,0,0,0.25);
-    color: rgb(255, 108, 2);
-    
-}
-a.logo:active{
-    transform: translateY(0);
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
-
-
-
-.AboutMe{
-    margin-top: 12rem;
-    width: calc(50% - 50px);
-    left: 50%;
-    height: 100%;
-    transform: translateX(-50%);
-    position: relative;
-}
-.AboutMe p{
-    font-size: 1.20rem;
-    color: rgb(79, 79, 79);
-    font-weight: 500;
-    text-align: center;
-    line-height: 2rem;
-}
 
 .container_2{
     width: 100%;
     height: 100%;
-    padding-top: 5.5rem;
 }
 
 .inside_container_2{
@@ -309,11 +208,11 @@ a.logo:active{
     height: 100%;
     margin: 0 0 2em 0;
     padding: 1em; 
-    background: #ff4d00;
+    /* background: #ff4d00; */
     border-radius: 2%;
 }
 .project_items h2{
-    color: whitesmoke;
+    color: rgb(68, 68, 68);
 }
 
 
@@ -324,12 +223,31 @@ a.logo:active{
     cursor: pointer;
     text-align: center;
     position: relative;
-    border-radius: 0.35em;
-    border: 0;
+    border-radius: 0.35em; 
+    border-style: solid;
+    border-color: rgb(255, 89, 0, 0.6);
+    border-width: 0.5rem;
 }
 .box_1 img{
     width: 100%;
     border-radius: 1%;
+}
+
+.middleviewbtn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border-style: solid;
+    border-color: rgb(255, 106, 0);
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.middleviewbtn h3{
+    color: white;
 }
 
 @media(max-width: 1800px){
@@ -448,6 +366,12 @@ a.logo:active{
 @media(max-width: 768px){
         #title_project{
         height: 13rem;
+    }
+    .nav_bar{
+        height: 1px;
+    }
+    .spaces{
+        height: 70px;
     }
     .inside_navbar{
         position: absolute;
