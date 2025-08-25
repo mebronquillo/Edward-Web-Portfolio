@@ -143,6 +143,10 @@ body.dont_scroll{
     padding: 2rem;
     display: grid;
 }
+
+.profile_pic{
+    text-align: center;
+}
 .profile_pic img{
     width: 250px;
     border-radius: 50%;
