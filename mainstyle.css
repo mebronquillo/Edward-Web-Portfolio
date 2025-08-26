@@ -202,9 +202,10 @@ body.dont_scroll{
     width: calc(100vh - 300px);
 }
 .AboutMe p{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: rgb(68, 68, 68);
     line-height: 1.6;
+    font-weight: 500;
 }
 
 
@@ -351,7 +352,7 @@ body.dont_scroll{
 
 
 @media(max-width: 768px){
-    
+    /* Container_1 */
     .text_inside_container_1{
         
         display: grid;
@@ -370,9 +371,6 @@ body.dont_scroll{
     }
     #title_project{
         height: 13rem;
-    }
-    .nav_bar{
-        height: 1px;
     }
     .container_1{
         height: calc(50% - 280px);
@@ -397,4 +395,6 @@ body.dont_scroll{
     .profile_pic img{
         width: 150px;
     }
+
+    /* Container_2 */
 }
