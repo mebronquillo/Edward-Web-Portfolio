@@ -135,17 +135,27 @@ body.dont_scroll{
 
 .container_1{
     margin-top: 0;
-    height: 100%;
+    height: 100vh;
+    width: 100%;
     background-color: rgb(255, 255, 255);
+    display: flex;
+    position: relative;
 }
 .inside_container_1{
     justify-content: center;
     padding: 2rem;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-self: center;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .profile_pic{
     text-align: center;
+    height: 100%;
 }
 .profile_pic img{
     width: 250px;
@@ -254,69 +264,6 @@ body.dont_scroll{
     color: white;
 }
 
-@media(max-width: 1800px){
-    .project_items{
-        width: 50vh;
-    }
-}
-@media(max-width: 1620px){
-    .project_items{
-        width: 45vh;
-    }
-}
-@media(max-width: 1550px){
-    .project_items{
-        width: 35vh;
-    }
-}
-
-@media(max-width: 1450px){
-    .project_items{
-        width: 100%;
-    }
-    .inside_container_2{
-        column-gap: 10rem;
-    }
-}
-
-@media(max-width: 1250px){
-    .project_items{
-        width: 100%;
-    }
-    .inside_container_2{
-        column-gap: 7rem;
-    }
-}
-
-@media(max-width: 1100px){
-    .inside_container_2{
-        display: block;
-        position: relative;
-    }
-    #title_project{
-        height: 15rem;
-    }
-    #inside_title_project{
-    position: unset;
-    height: 16vh;
-    padding: 1.5rem;
-    background: #ff4d00;
-    border-radius: 2%;
-    height: 100px;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
-    }
-    .myproject_items{
-        margin-left: 1%;
-        justify-content: center;
-        width: calc(100% - 10px);
-    }
-    .project_items{
-        width: 100%;
-    }
-    .inside_container_2{
-        column-gap: 7rem;
-    }
-}
 
 
 
@@ -392,5 +339,9 @@ body.dont_scroll{
     }
     .hamburger{
         display: flex;
+    }
+
+    .profile_pic img{
+        width: 100px;
     }
 }
