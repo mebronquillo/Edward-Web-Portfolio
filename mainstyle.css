@@ -349,12 +349,16 @@ body.dont_scroll{
 
 
 @media(max-width: 768px){
+    
     .text_inside_container_1{
+        
         display: grid;
         column-gap: 3rem;
+        padding: 1rem;
     }
     .text_inside_container_1 h2{
-    font-size: 1.5rem;
+        
+        font-size: 1.5rem;
     }
     .AboutMe{
         padding-top: 1rem;
