@@ -53,7 +53,8 @@ body{
     cursor: pointer;
 }
 .hamburger{
-    display: flex;
+    
+    display: none;
 }
 .hamburger div{
     width: 25px;
@@ -62,11 +63,7 @@ body{
     border-radius: 2px;
 }
 
-@media(max-width: 2800px){
-    .hamburger{
-        display: none;
-    }
-}
+
 
 a.boxs1{
     justify-content: center;
@@ -135,7 +132,7 @@ body.dont_scroll{
 
 .container_1{
     margin-top: 0;
-    height: 100vh;
+    height: 85vh;
     width: 100%;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -169,6 +166,43 @@ body.dont_scroll{
 .text_inside_container_1{
     display: flex;
     column-gap: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+.text_inside_container_1 h2{
+    font-size: 2.5rem;
+    color: rgb(67, 68, 68);
+}
+
+.ClickMe{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 1.5rem;
+}
+.logo{
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    color: rgb(67, 68, 68);
+}
+.logo:hover{
+    color: #ff4d00;
+    transition: 1s;
+}
+.AboutMe{
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: calc(100vh - 300px);
+}
+.AboutMe p{
+    font-size: 1.2rem;
+    color: rgb(68, 68, 68);
+    line-height: 1.6;
 }
 
 
@@ -315,7 +349,14 @@ body.dont_scroll{
 
 
 @media(max-width: 768px){
-        #title_project{
+    .text_inside_container_1 h2{
+    font-size: 1.8rem;
+    }
+    .AboutMe{
+        padding-top: 1rem;
+        width: calc(100% - 100px);
+    }
+    #title_project{
         height: 13rem;
     }
     .nav_bar{
