@@ -350,7 +350,7 @@ body.dont_scroll{
 
 @media(max-width: 768px){
     .text_inside_container_1 h2{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     }
     .AboutMe{
         padding-top: 1rem;
@@ -362,8 +362,8 @@ body.dont_scroll{
     .nav_bar{
         height: 1px;
     }
-    .spaces{
-        height: 70px;
+    .container_1{
+        height: calc(50% - 280px);
     }
     .inside_navbar{
         position: absolute;
