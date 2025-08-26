@@ -132,7 +132,7 @@ body.dont_scroll{
 
 .container_1{
     margin-top: 0;
-    height: 85vh;
+    height: calc(50% - 145px);
     width: 100%;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -349,6 +349,10 @@ body.dont_scroll{
 
 
 @media(max-width: 768px){
+    .text_inside_container_1{
+        display: grid;
+        column-gap: 3rem;
+    }
     .text_inside_container_1 h2{
     font-size: 1.5rem;
     }
