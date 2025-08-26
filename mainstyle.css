@@ -172,6 +172,10 @@ body.dont_scroll{
 .ello{
     font-size: 2.5rem;
 }
+.ello1{
+    font-size: 2.5rem;
+    display: none;
+}
 .imed{
     font-size: 2.5rem;
 }
@@ -277,7 +281,7 @@ body.dont_scroll{
     border-radius: 0.35em; 
     border-style: solid;
     border-color: rgb(255, 89, 0, 0.6);
-    border-width: 0.5rem;
+    border-width: we0.5rem;
 }
 .box_1 img{
     width: 100%;
@@ -354,13 +358,17 @@ body.dont_scroll{
 @media(max-width: 768px){
     /* Container_1 */
     .text_inside_container_1{
-        
         display: grid;
         column-gap: 3rem;
         padding: 1rem;
     }
     .ello{
         font-size: 2rem;
+        display: none;
+    }
+    .ello1{
+        font-size: 2rem;
+        display: block;
     }
     .imed{
         font-size: 1.5rem;
