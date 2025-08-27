@@ -20,15 +20,6 @@ function close_nav(){
     document.getElementById("nav_aboutme_id").style.width = "0%";
 }
 
-
-function direct_to_contactme(){
-    document.getElementById("nav_contact_id").style.width = "300px";
-}
-
-function close_nav1(){
-    document.getElementById("nav_contact_id").style.width = "0%";
-}
-
 function toggleMenu(){
     document.getElementById("nav_Menu").classList.toggle("nav_active");
 }
