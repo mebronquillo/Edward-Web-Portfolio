@@ -6,7 +6,15 @@ function direct_to_project(){
         block: "start",
         inline: "start"
     });
-    
+}
+
+function direct_to_contactme(){
+    const scrolltocontactme = document.getElementById("im_the_contactme");
+    scrolltocontactme.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "start"
+    });
 }
 
 var body = document.body;
