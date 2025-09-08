@@ -205,6 +205,9 @@ body.dont_scroll{
     justify-content: center;
     column-gap: 1.5rem;
 }
+.visit_nav h3{
+    margin: 0;
+}
 .logo{
     box-shadow: 0 10px 10px rgba(0,0,0,0.2);
     color: rgb(67, 68, 68);
@@ -345,6 +348,20 @@ body.dont_scroll{
     transition: 0.3s;
 }
 
+.visit_git{
+    margin-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.visit_git h2{
+    color: rgb(68, 68, 68);
+}
+
+.github_direct{
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 .box_1{
     width: 100%;
@@ -413,7 +430,6 @@ body.dont_scroll{
 
 .container_3{
     width: 100%;
-    height: 150vh;
     background-color: antiquewhite;
 }
 .inside_container_3{
@@ -441,6 +457,117 @@ body.dont_scroll{
 .mycont_tile h2{
     color: white;
 }
+
+.contact_text{
+    margin-top: 2.5rem;
+}
+.contact_text p{
+    font-size: 1.3rem;
+}
+
+.form_input{
+    margin-top: 2.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+}
+.box_details_contact{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.email_box{
+    background-color: gray;
+    padding: 1.5rem;
+    border-radius: 6px;
+    display: grid;
+    row-gap: 0.8rem;
+}
+.email_box p{
+    color: white;
+    margin: 0;
+}
+.number_box{
+    background-color: gray;
+    padding: 1.5rem;
+    border-radius: 6px;
+    display: grid;
+    row-gap: 0.8rem;
+}
+.number_box p{
+    color: white;
+    margin: 0;
+}
+.viber_box{
+    background-color: gray;
+    padding: 1.5rem;
+    border-radius: 6px;
+    display: grid;
+    row-gap: 0.8rem;
+}
+.viber_box p{
+    color: white;
+    margin: 0;
+}
+
+.inside_div_form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 3rem;
+    width: 30rem;
+}
+
+.inside_div_form input{
+    padding: 0.8rem;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 0.2rem;
+    background-color: transparent;
+    outline: none;
+}
+.inside_div_form ::placeholder{
+    color: rgb(68, 68, 68);
+    font-size: 1rem;
+    font-weight: 600;
+}
+.inside_div_form textarea{
+    height: 8rem;
+    padding: 0.8rem;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 0.2rem;
+    background-color: transparent;
+    outline: none;
+}
+.inside_div_form button{
+    width: calc(100% - 200px);
+    padding: 1rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 6px;
+    background-color: #ff4d00;
+    border-style: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    column-gap: 0.3rem;
+}
+.inside_div_form button i {
+    position: relative;
+    top: 0.8rem;
+    margin: 0;
+}
+
+
+
 
 .nav_container{
     display: flex;
@@ -540,5 +667,25 @@ body.dont_scroll{
     font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 1.5rem;
+    }
+
+    /* container_3 */
+    .contact_text{
+    margin-top: 2.5rem;
+    }
+    .form_input{
+        display: grid;
+        row-gap: 2.5rem;
+    }
+    .inside_div_form{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .inside_div_form{
+        width: 80vw;
+    }
+    .inside_div_form button{
+    width: 100%;
+    padding: 0.8rem; 
     }
 }
