@@ -576,11 +576,11 @@ body.dont_scroll{
     color: aliceblue;
 }
 
-/* Testing nga po plss */
+/* Testing */
 /* Laptop */
 @media(min-width: 1024px){
 .spaces{
-    height: 130px;
+    height: 140px;
 }
 
 .profile_pic img{
