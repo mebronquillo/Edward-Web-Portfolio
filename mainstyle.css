@@ -580,7 +580,7 @@ body.dont_scroll{
 /* Laptop */
 @media(min-width: 1024px){
 .spaces{
-    height: 135px;
+    height: 130px;
 }
 
 .profile_pic img{
