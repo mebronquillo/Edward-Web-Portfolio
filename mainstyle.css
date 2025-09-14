@@ -54,22 +54,7 @@ body{
     display: grid;
 }
 
-.hamburger{
-    display: none;
-    flex-direction: column;
-    gap: 4px;
-    cursor: pointer;
-}
-.hamburger{
-    
-    display: none;
-}
-.hamburger div{
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    border-radius: 2px;
-}
+
 
 
 
@@ -592,10 +577,25 @@ body.dont_scroll{
 }
 
 
-/* mobiles */
+/* Laptop */
+@media(min-width: 1024px){
+.spaces{
+    height: 130px;
+}
+
+.profile_pic img{
+    width: 180px;
+}
+/* container 1 */
+.nav_bar{
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+}
 
 
+}
 
+/* Mobile */
 @media(max-width: 768px){
     /* Container_1 */
 
