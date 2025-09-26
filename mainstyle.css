@@ -115,9 +115,11 @@ body.dont_scroll{
     top: 0px;
     left: 0px;
     background-color: rgb(248, 248, 248);
-    overflow-y: hidden;
-    z-index: 3;
+    overflow-x: hidden;
+    z-index: 5;
     transition: 0.3s;
+    display: grid;
+    grid-template-columns: minmax(40%, 30%) 1fr;
 }
 
 .closebtn{
@@ -127,14 +129,143 @@ body.dont_scroll{
     color: rgb(255, 106, 0);
 }
 
+.nav_body{
+    background-color: rgb(36, 36, 36);
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-auto-rows: min-content;
+    max-width: 100%;
+    text-align: center;
+}
+.nav_pic img{
+    margin: 1.5rem;
+    width: 23vw;
+    border-radius: 6px;
+}
+.nav_pic h2{
+    color: white;
+    font-size: 2.5rem;
+}
+.logo_nav{
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+}
+.visit_nav_title h3{
+    margin: 0;
+    color:#ff4d00
+}
+.logo_nav1{
+    color: rgb(67, 68, 68);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+}
+.logo_nav1:hover{
+    color: #ff4d00;
+}
+
+.nav_to_contactme{
+    margin-top: 2rem;
+}
+.nav_to_contactme a{
+    color: rgb(60, 59, 59);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    background-color: rgba(255, 106, 0, 0);
+    cursor: pointer;
+    text-indent: 5px;
+}
+.nav_to_contactme a:hover{
+    color: #ff4d00;
+}
+
+.nav_body_1{
+    background-color: rgb(68, 68, 68);
+    height: 100%;
+    overflow-y: auto;
+}
+.aboutme_details{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    
+}
+.description_me{
+    width: 30vw;
+    margin-left: 2rem;
+}
+.description_me h2{
+    color: orangered;
+    font-size: 2rem;
+}
+.description_me p{
+    color: white;
+    font-size: 1.2rem;
+}
+.description_me1{
+    margin-top: 4.5rem;
+    margin-left: 2rem;
+    display: flex;
+    column-gap: 3rem;
+}
+.description_me1 h2{
+    color: orangered;
+}
+.description_me1 p{
+    color: white;
+    font-size: 1.2rem;
+}
+.inside_description_me1 p{
+    color: orangered;
+    font-weight: 700;
+}
+.inside1_description_me2 p{
+    text-align: end;
+}
+
+.aboutme_details1{
+    margin-left: 2rem;
+}
+.aboutme_details1 h2{
+    margin-top: 4.5rem;
+    color: orangered;
+    font-size: 2rem;
+}
+.box_details{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+    column-gap: 2rem;
+    margin-top: 1.5rem;
+}
+.nav_box{
+    background-color: aqua;
+    width: 30rem;
+}
+.nav_box1{
+    background-color: cornflowerblue;
+    width: 30rem;
+}
+.nav_box2{
+    background-color: chartreuse;
+    width: 30rem;
+}
+.nav_box3{
+    background-color: blue;
+    width: 30rem;
+}
+
+
+
 .mainbody{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);  
 }
 
 .container_1{
     margin-top: 0;
     height: calc(50% - 120px);
     width: 100%;
+    height: 100vh;
     background-color: rgb(255, 255, 255);
     display: flex;
     position: relative;
@@ -143,6 +274,8 @@ body.dont_scroll{
     justify-content: center;
     padding: 2rem;
     display: flex;
+    width: 100%;
+    height: auto;
     flex-direction: column;
     position: relative;
     align-self: center;
@@ -201,7 +334,7 @@ body.dont_scroll{
 }
 .AboutMe{
     padding-top: 1rem;
-    padding-bottom: 4rem;
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -216,6 +349,15 @@ body.dont_scroll{
     color: rgb(68, 68, 68);
     line-height: 1.6;
     font-weight: 500;
+}
+.direct_nav_about{
+    color: #ff4d00;
+    cursor: pointer;
+}
+.direct_nav_about:hover{
+    color: rgb(51, 55, 55);
+    transition: 0.3s;
+    font-weight: 700;
 }
 @media(min-width: 1200px){
     .AboutMe{
@@ -550,22 +692,6 @@ body.dont_scroll{
 }
 
 
-
-
-.nav_container{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-.itembox{
-    background-color: aqua;
-}
-.itembox1{
-    background-color: blanchedalmond;
-}
-
 .footer{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -576,17 +702,16 @@ body.dont_scroll{
     color: aliceblue;
 }
 
-/* Testing */
 /* Laptop */
-@media(min-width: 1024px){
+@media(max-width: 1024px){
 .spaces{
-    height: 135px;
+    height: 130px;
 }
 
 .profile_pic img{
     width: 180px;
 }
-/* container 1 */
+
 .nav_bar{
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
@@ -594,7 +719,7 @@ body.dont_scroll{
 
 
 }
-/* Pa Update na ito kokokoko kupal */
+
 /* Mobile */
 
 @media(max-width: 768px){
@@ -687,4 +812,6 @@ body.dont_scroll{
     width: 100%;
     padding: 0.8rem; 
     }
+
+    /* Navigator of About me */
 }
