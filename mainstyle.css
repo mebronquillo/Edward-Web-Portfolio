@@ -239,20 +239,40 @@ body.dont_scroll{
     margin-top: 1.5rem;
 }
 .nav_box{
-    background-color: aqua;
+    background-color: rgb(61, 61, 61);
     width: 30rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    border-radius: 6px;
+}
+.nav_box h3{
+    color: orangered;
 }
 .nav_box1{
-    background-color: cornflowerblue;
+    background-color: rgb(61, 61, 61);
     width: 30rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    border-radius: 6px;
+}
+.nav_box1 h3{
+    color: orangered;
 }
 .nav_box2{
-    background-color: chartreuse;
+    background-color: rgb(61, 61, 61);
     width: 30rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    border-radius: 6px;
+}
+.nav_box2 h3{
+    color: orangered;
 }
 .nav_box3{
-    background-color: blue;
+    background-color: rgb(61, 61, 61);
     width: 30rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    border-radius: 6px;
+}
+.nav_box3 h3{
+    color: orangered;
 }
 
 
