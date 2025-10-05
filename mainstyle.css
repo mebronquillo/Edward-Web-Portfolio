@@ -339,6 +339,36 @@ body.dont_scroll{
     .nav_body_1{
         overflow-y: visible;
     }
+    .nav_to_contactme{
+        margin-bottom: 3rem;
+    }
+
+    
+    .aboutme_details{
+        justify-content: center;
+    }
+    .description_me{
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    .description_me h2{
+        text-align: center;
+    }
+    
+
+
+    .description_me1{  
+        text-align: left;
+        justify-content: center;
+        column-gap: 8rem;
+    }
+    .aboutme_details1 h2{
+        text-align: center;
+    }
+
+
     .box_details{
         justify-content: center;
     }
@@ -355,8 +385,7 @@ body.dont_scroll{
         
     }
     .nav_box3{
-        width: 30rem;
-        
+        width: 30rem; 
     }
     
 }
