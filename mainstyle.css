@@ -4,6 +4,7 @@ body{
     background-color: rgb(236, 243, 243);
 }
 
+
 .nav_bar{
     width: 100%;
     padding-bottom: 2rem;
@@ -186,7 +187,6 @@ body.dont_scroll{
 }
 .aboutme_details{
     display: flex;
-    flex-wrap: wrap;
     column-gap: 3rem;
     
 }
@@ -204,9 +204,9 @@ body.dont_scroll{
 }
 .description_me1{
     margin-top: 4.5rem;
-    margin-left: 2rem;
     display: flex;
     column-gap: 3rem;
+    margin-left: 2rem;
 }
 .description_me1 h2{
     color: orangered;
@@ -221,6 +221,21 @@ body.dont_scroll{
 }
 .inside1_description_me2 p{
     text-align: end;
+}
+
+@media(max-width: 1300px){
+    .aboutme_details{
+        display: grid;
+        
+    }
+    .description_me{
+        width: 53vw;
+        margin-left: 2rem;
+    }
+    .description_me1{
+        
+        /* Bahala na kung justity content center */
+    }
 }
 
 .aboutme_details1{
@@ -238,43 +253,89 @@ body.dont_scroll{
     column-gap: 2rem;
     margin-top: 1.5rem;
 }
+.title_box{
+    display: flex;
+    column-gap: 1rem;
+}
 .nav_box{
     background-color: rgb(61, 61, 61);
-    width: 30rem;
+    width: 45%;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     border-radius: 6px;
+    padding: 0.5rem;
 }
 .nav_box h3{
     color: orangered;
 }
 .nav_box1{
     background-color: rgb(61, 61, 61);
-    width: 30rem;
+    width: 45%;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     border-radius: 6px;
+    padding: 0.5rem;
 }
 .nav_box1 h3{
     color: orangered;
 }
 .nav_box2{
     background-color: rgb(61, 61, 61);
-    width: 30rem;
+    width: 45%;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     border-radius: 6px;
+    padding: 0.5rem;
 }
 .nav_box2 h3{
     color: orangered;
 }
 .nav_box3{
     background-color: rgb(61, 61, 61);
-    width: 30rem;
+    width: 45%;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     border-radius: 6px;
+    padding: 0.5rem;
 }
 .nav_box3 h3{
     color: orangered;
 }
 
+@media(max-width: 1300px){
+    .nav_pic img{
+        margin-top: 5rem;
+        width: 23rem;
+    }
+    .nav_box{
+        width: 50vw;
+        
+    }
+    .nav_box1{
+        width: 50vw;
+        
+    }
+    .nav_box2{
+        width: 50vw;
+        
+    }
+    .nav_box3{
+        width: 50vw;
+        
+    }
+}
+
+/* about us mobile version */
+@media(max-width: 1000px){
+    .nav_box{
+         
+    }
+    .nav_box1{
+          
+    }
+    .nav_box2{
+           
+    }
+    .nav_box3{
+        
+    }
+}
 
 
 .mainbody{
