@@ -326,6 +326,7 @@ body.dont_scroll{
 
 /* mobile version of aboutme nav */
 @media(max-width: 768px){
+    
     .nav_aboutme{
         display: grid;
         grid-template-columns: 1fr;
@@ -334,10 +335,11 @@ body.dont_scroll{
     .nav_body{
         display: grid;
         grid-template-columns: 1fr;
-        
+        margin: 0;
     }
     .nav_body_1{
         overflow-y: visible;
+        
     }
     .nav_to_contactme{
         margin-bottom: 3rem;
@@ -371,21 +373,23 @@ body.dont_scroll{
 
     .box_details{
         justify-content: center;
+        row-gap: none;
+        column-gap: none;
     }
     .nav_box{
-        width: 30rem;
+        width: 100%;
         
     }
     .nav_box1{
-        width: 30rem;
+        width: 100%;
         
     }
     .nav_box2{
-        width: 30rem;
+        width: 100%;
         
     }
     .nav_box3{
-        width: 30rem; 
+        width: 100%; 
     }
     
 }
