@@ -349,6 +349,9 @@ body.dont_scroll{
     .aboutme_details{
         justify-content: center;
     }
+    .box_details{
+        justify-content: center;
+    }
     .description_me{
         width: 80vw;
         margin-left: auto;
@@ -372,24 +375,24 @@ body.dont_scroll{
 
 
     .box_details{
-        justify-content: center;
+        justify-content: left;
         row-gap: none;
         column-gap: none;
     }
     .nav_box{
-        width: 100%;
+        width: calc(100% - 50px);
         
     }
     .nav_box1{
-        width: 100%;
+        width: calc(100% - 50px);
         
     }
     .nav_box2{
-        width: 100%;
+        width: calc(100% - 50px);
         
     }
     .nav_box3{
-        width: 100%; 
+        width: calc(100% - 50px); 
     }
     
 }
