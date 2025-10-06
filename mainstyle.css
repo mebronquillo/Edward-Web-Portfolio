@@ -365,9 +365,9 @@ body.dont_scroll{
 
 
     .description_me1{  
-        text-align: left;
-        justify-content: center;
-        column-gap: 8rem;
+        margin-left: none;
+        text-align: center;
+        column-gap: 3rem;
     }
     .aboutme_details1 h2{
         text-align: center;
