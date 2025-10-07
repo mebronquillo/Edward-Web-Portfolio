@@ -18,11 +18,7 @@ body{
     box-shadow: 1px 1px 15px black;
 }
 
-.spaces{
-    height: 145px;
-    background-color: rgb(255, 255, 255);
-    width: 100%;    
-}
+
 
 .inside_navbar{ 
     position: relative;
@@ -404,60 +400,56 @@ body.dont_scroll{
     background-color: rgb(255, 255, 255);  
 }
 
+.spaces{
+    height: 1rem;
+    background-color: rgb(61, 61, 61);
+}
+
 .container_1{
-    margin-top: 0;
-    height: calc(50% - 120px);
     width: 100%;
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    position: relative;
 }
 .inside_container_1{
-    justify-content: center;
-    padding: 2rem;
-    display: flex;
+    background-color: rgb(44, 44, 44);
     width: 100%;
-    height: auto;
-    flex-direction: column;
-    position: relative;
+    height: 100vh;
+    display: flex;
     align-self: center;
-    justify-self: center;
+}
+.profile_pic{
+    text-align: center;
+    align-self: center;
+}
+.profile_pic img{
+    width: 68%;
+  -webkit-filter: drop-shadow(5px 5px 5px #111111);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+ 
+@media(max-width: 1500px){
+    
+}
+
+.profile_detailme{ 
+    align-self: center;
     margin-left: auto;
     margin-right: auto;
 }
-
-.profile_pic{
-    text-align: center;
-    height: 100%;
-}
-.profile_pic img{
-    width: 250px;
-    border-radius: 50%;
-    border-style: solid;
-    border-color: rgba(41, 41, 41, 0.3);
-    border-width: 5px;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
-}
-
-.text_inside_container_1{
+.name_me{
     display: flex;
-    column-gap: 1rem;
-    text-align: center;
-    justify-content: center;
+    column-gap: 0.5rem;
 }
-.ello{
+.name_me h2{
     font-size: 2.5rem;
+    color: white;
+    margin: 0;
 }
-.ello1{
-    font-size: 2.5rem;
-    display: none;
-}
-.imed{
-    font-size: 2.5rem;
+.profile_detailme h3{
+    color: white;
+    font-size: 1.2rem;
 }
 
-.ClickMe{
+
+/* .ClickMe{
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -474,45 +466,17 @@ body.dont_scroll{
 .logo:hover{
     color: #ff4d00;
     transition: 1s;
-}
-.AboutMe{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    width: calc(100vh - 300px);
-    text-align: left;
-    width: 70%;
-}
-.AboutMe p{
-    font-size: 1.3rem;
-    color: rgb(68, 68, 68);
-    line-height: 1.6;
-    font-weight: 500;
-}
-.direct_nav_about{
-    color: #ff4d00;
-    cursor: pointer;
-}
-.direct_nav_about:hover{
-    color: rgb(51, 55, 55);
-    transition: 0.3s;
-    font-weight: 700;
-}
-@media(min-width: 1200px){
-    .AboutMe{
-        width: 50rem;
-    }
-}
+} */
+
+
+
+
 
 
 .container_2{
     width: 100%;
     height: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(61, 61, 61);
 }
 
 .inside_container_2{
@@ -852,9 +816,6 @@ body.dont_scroll{
     height: 130px;
 }
 
-.profile_pic img{
-    width: 180px;
-}
 
 .nav_bar{
     padding-top: 1.2rem;
@@ -867,51 +828,22 @@ body.dont_scroll{
 /* Mobile */
 
 @media(max-width: 768px){
-    /* Container_1 */
+    /* Container_1 mobile version */
 
-    
-    .text_inside_container_1{
-        display: grid;
-        column-gap: 3rem;
-        padding: 1rem;
-    }
-    .ello{
-        font-size: 2rem;
-        display: none;
-    }
-    .ello1{
-        font-size: 2rem;
-        display: block;
-    }
-    .imed{
-        font-size: 1.5rem;
-    }
-    .AboutMe{
-        padding-top: 1rem;
-        width: calc(100% - 20px);
-    }
     #title_project{
         height: 13rem;
     }
-    .container_1{
-        height: calc(50% - 280px);
-    }
+    
     .koma h2{
         display: none;
     }
     a.boxs1{
         width: 30px;
-        
     }
     
-    
-    
-    .profile_pic img{
-        width: 150px;
-    }
     
 
-    /* Container_2 */
+    /* Container_2 mobile version */
     .inside_proj_1 img{
     border-style: solid;
     border-color: rgb(255, 106, 0);
