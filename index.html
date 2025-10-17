@@ -223,10 +223,11 @@
                         <p>Edward Ronquillo</p>
                     </div>
                 </div>
-                <form class="inside_div_form">
-                    <input type="text" placeholder="NAME" required>
-                    <input type="email" placeholder="EMAIL" required>
-                    <textarea type=message placeholder="YOUR MESSAGE" rows="2"></textarea>
+                <form action="portfolio-mail.php" method="post" class="inside_div_form">           
+                    <input type="text" name="name" placeholder="NAME" required>
+                    <input type="text" name="subject" placeholder="SUBJECT" required>
+                    <input type="email" name="email" placeholder="EMAIL" required>
+                    <textarea name="message" type=message placeholder="YOUR MESSAGE" rows="2" required></textarea>
                     <button type="submit"><i style="font-size: 24px;" class="material-icons">&#xe163;</i><p>Send Message</p></button>
                 </form>
 
