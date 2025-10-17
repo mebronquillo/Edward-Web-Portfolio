@@ -35,6 +35,44 @@ function toggleMenu(){
 
 
 
+// Random text
+document.addEventListener('DOMContentLoaded', () => {
+const hoverArea = document.querySelector('.profile_pic');
+const randomTextDisplay = document.querySelector('.random_message');
+
+const randomTexts = [
+    "Hello There!!",
+    "Psst!! You.. yes you! have a great day!",
+    "I'm Open for work.",
+    "Nice to meet you.",
+    "Hi!!",
+    "I am cyclist BTW! ",
+    "Aray ku!!",
+    "I want to be a Full Stack Developer!"
+];
+
+hoverArea.addEventListener('mouseenter', () => {
+    // random text from array
+    const randomIndex = Math.floor(Math.random() * randomTexts.length);
+    randomTextDisplay.textContent = randomTexts[randomIndex];
+    randomTextDisplay.style.display = 'block'; // Showing text
+    randomTextDisplay.animate([
+        { opacity: 0 },
+        { opacity: 1 }
+    ], {
+        duration: 200,
+        easing: 'ease-in-out'
+    });
+  });
+
+//not hovering and remove the message
+hoverArea.addEventListener('mouseleave', () =>{ 
+randomTextDisplay.style.display = 'none';
+});
+});
+
+
+
 
 
 

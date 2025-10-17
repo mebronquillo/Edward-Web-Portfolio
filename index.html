@@ -92,22 +92,41 @@
            
             <div class="profile_pic">
                 <img src="images/container_1/2x2_Edwards.png" class="profile_pic" data-aos="fade-right" data-aos-delay="0" data-aos-once="true" data-aos-duration="600">
+                <!-- <div class="thoughts sb1">
+                    <p>Hey There!</p>
+                </div> -->
+                
+                <div class="random_message sb1">
+                    
+                </div>
             </div>
 
-            <div class="profile_detailme" class="profile_pic" data-aos="fade-left" data-aos-delay="300" data-aos-once="true" data-aos-duration="600"> 
+            <div class="profile_detailme" data-aos="fade-left" data-aos-delay="300" data-aos-once="true" data-aos-duration="600"> 
                 <div class="name_me">
                     <h2>Hi, </h2>
                     <h2>I'm Edward</h2>
                 </div>
                 
-                <h3>Front-End Developer</h3>
-                <h4>Sentence Sentence Sentence Sentence Sentence 
-                    Sentence Sentence Sentence Sentence Sentence Sentence
+                
+                <h3>Front-End/Website Developer</h3>
+                
+                <h4>
+                    I'm a Front-End Developer who loves Designing Websites, I also had knowledge of Web Development.
                 </h4>
+                
 
-                <div>
-                    <a>More About me!</a>
+                <div class="button-to-nav_about">
+                    <a onclick="direct_to_aboutme()" id="anim"><i style='font-size:24px' class='far'>&#xf007;</i>More About me!</a>
                 </div>
+
+                <div class="ClickMe">
+                <a class="visit_nav"><h3 style="color: orangered;">Visit me</h3></a>
+                <a href="https://www.facebook.com/edwardronquillo3" target="_blank" class="logo" data-aos="fade-right" data-aos-delay="600" data-aos-once="true" data-aos-duration="100"><i style="font-size: 24px;" class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/edward-ronquillo-166584262" class="logo" target="_blank" class="ko" data-aos="fade-up" data-aos-delay="900" data-aos-once="true" data-aos-duration="100"><i style="font-size: 24px;" class="fa-brands fa-sqaure-linkedin">&#xf08c;</i></a>
+                <a href="https://github.com/mebronquillo" target="_blank" class="logo" data-aos="fade-up" data-aos-delay="1200" data-aos-once="true" data-aos-duration="100"><i style="font-size: 24px;" class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/_edwardronquillo_" class="logo" target="_blank" class="ko" data-aos="fade-left" data-aos-delay="1500" data-aos-once="true" data-aos-duration="100"><i style="font-size: 24px;" class="fa-brands fa-instagram"></i></a>
+            </div>
+                
             </div>
 
             
@@ -141,6 +160,7 @@
                         <div class="myproj_img1">
                             <a class="inside_proj_1" data-aos="fade-down" data-aos-delay="300" data-aos-once="true" data-aos-duration="300">
                                 <img src="images/myproject_img/1.JPG">
+                                <!-- Fix the Image -->
                             </a>
 
                             <h2 data-aos="fade-down" data-aos-delay="600" data-aos-once="true" data-aos-duration="300">Ortigas Land Website</h2>
@@ -203,12 +223,24 @@
                         <p>Edward Ronquillo</p>
                     </div>
                 </div>
-                <form class="inside_div_form">
-                    <input type="text" placeholder="NAME" required>
-                    <input type="email" placeholder="EMAIL" required>
-                    <textarea type=message placeholder="YOUR MESSAGE" rows="2"></textarea>
+                <form action="portfolio-mail.php" method="post" class="inside_div_form">           
+                    <input type="text" name="name" placeholder="NAME" required>
+                    <input type="text" name="subject" placeholder="SUBJECT" required>
+                    <input type="email" name="email" placeholder="EMAIL" required>
+                    <textarea name="message" type=message placeholder="YOUR MESSAGE" rows="2" required></textarea>
                     <button type="submit"><i style="font-size: 24px;" class="material-icons">&#xe163;</i><p>Send Message</p></button>
                 </form>
+
+                <!-- For built in email sender -->
+                <!-- <form action="https://api.web3forms.com/submit" method="POST" class="inside_div_form">
+                    <input type="hidden" name="access_key" value="3326551d-8c59-453e-9a5d-21f99fe5565f">
+                    <input type="text" name="name" placeholder="NAME" required>
+                    <input type="email" name="email" placeholder="EMAIL" required>
+                    <textarea name="message" type=message placeholder="YOUR MESSAGE" rows="2"></textarea>
+                    <button type="submit"><i style="font-size: 24px;" class="material-icons">&#xe163;</i><p>Send Message</p></button>
+                </form> -->
+
+                
             </div>
 
 
@@ -271,7 +303,7 @@
                     </div>
 
                     <div class="inside1_description_me2">
-                        <p>44</p>
+                        <p>24</p>
                         <p>Philippines</p>
                         <p>Metro Manila</p>
                         <p>Feb 03, 2001</p>
@@ -324,7 +356,7 @@
 
                     <div class="nav_box3">
                         <h3 class="title_box">
-                            <i class="fa-solid fa-person-biking" style="color: gray; font-size: 25px;"></i>Cyclist
+                            <i class="fa-solid fa-person-biking" style="color: gray; font-size: 25px;"></i>PHP
                         </h3>
                         <p style="color: white;">
                             Blah blah blah Blah blah blah
