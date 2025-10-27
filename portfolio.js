@@ -48,7 +48,15 @@ const randomTexts = [
     "Hi!!",
     "I am cyclist BTW! ",
     "Aray ku!!",
-    "I want to be a Full Stack Developer!"
+    "I want to be a Full Stack Developer!",
+    "Keep Smiling :)",
+    "Coding is fun!",
+    "Stay Positive!",
+    "You are awesome!",
+    "Seize the day!",
+    "Dream Big!",
+    "What do you call a farm working on a medicine? A 'Farmmacist!'",
+    
 ];
 
 hoverArea.addEventListener('mouseenter', () => {

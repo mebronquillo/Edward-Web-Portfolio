@@ -63,7 +63,7 @@ a.boxs1{
     display: inline-block;
     padding: 14px 28px;
     width: 125px;
-    background: #ff4d00;
+    background: orangered;
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -127,7 +127,7 @@ body.dont_scroll{
     position: absolute;
     top: 1rem;
     right: 2rem;
-    color: rgb(255, 106, 0);
+    color: orangered;
 }
 
 .nav_body{
@@ -155,14 +155,14 @@ body.dont_scroll{
 }
 .visit_nav_title h3{
     margin: 0;
-    color:#ff4d00
+    color:orangered;
 }
 .logo_nav1{
     color: rgb(67, 68, 68);
     box-shadow: 0 10px 10px rgba(0,0,0,0.2);
 }
 .logo_nav1:hover{
-    color: #ff4d00;
+    color: orangered;
 }
 
 .nav_to_contactme{
@@ -178,7 +178,7 @@ body.dont_scroll{
     text-indent: 5px;
 }
 .nav_to_contactme a:hover{
-    color: #ff4d00;
+    color: orangered;
 }
 
 .nav_body_1{
@@ -299,6 +299,19 @@ body.dont_scroll{
     color: orangered;
 }
 
+.nav_box4 h3{
+    color: orangered;
+}
+.nav_box4{
+    background-color: rgb(61, 61, 61);
+    width: 45%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    padding: 0.5rem;
+}
+
+
+
 @media(max-width: 1300px){
     .nav_pic img{
         margin-top: 5rem;
@@ -317,6 +330,10 @@ body.dont_scroll{
         
     }
     .nav_box3{
+        width: 50vw;
+        
+    }
+    .nav_box4{
         width: 50vw;
         
     }
@@ -392,6 +409,9 @@ body.dont_scroll{
     .nav_box3{
         width: calc(100% - 50px); 
     }
+    .nav_box4{
+        width: calc(100% - 50px); 
+    }
     
 }
 
@@ -408,22 +428,38 @@ body.dont_scroll{
 }
 
 .container_1{
-    width: 100%;
+   
 }
 .inside_container_1{
     background-color: rgb(44, 44, 44);
-    width: 100%;
-    height: 100vh;
+    height: 100vh; /* delete this if using other image responsive */
     display: flex;
     align-self: center;
+    
 }
+
+/* For another design of my image responsive */
+/* .profile_pic{
+    background: url(images/container_1/2x2_Edwards.png);
+    background-size:cover; 
+    background-position: center center; 
+    height: 100vh;
+    width: 100%;
+    -webkit-filter: drop-shadow(5px 5px 5px #111111);
+     filter: drop-shadow(5px 0px 15px #242323);
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+    align-self:last baseline;
+}    */
+
 .profile_pic{
-    min-width:640px;
+    min-width:680px;
     text-align: center;
     align-self:last baseline;
 }
 .profile_pic img{
-    width:75%;
+    width: 76%;
   -webkit-filter: drop-shadow(5px 5px 5px #111111);
   filter: drop-shadow(5px 0px 15px #242323);
 }
@@ -456,7 +492,9 @@ body.dont_scroll{
 
 
 
-
+.profile_detailme{
+    
+}
 
 .profile_detailme h4{
     width: 70%;
@@ -470,7 +508,7 @@ margin-top: 3.5rem;
 }
 
 .button-to-nav_about a{
-    background-color: #ff4d00;
+    background-color: orangered;
     padding-top: 1.4rem;
     padding-bottom: 1.4rem;
     padding-left: 2rem;
@@ -529,11 +567,9 @@ margin-top: 3.5rem;
     color: rgb(67, 68, 68);
 }
 .logo:hover{
-    color: #ff4d00;
+    color: orangered;
     transition: 1s;
 }
-
-
 
 
 
@@ -546,7 +582,7 @@ margin-top: 3.5rem;
 
 .inside_container_2{
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 12rem;
     padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
@@ -558,7 +594,7 @@ margin-top: 3.5rem;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    background-color: rgb(255, 106, 0);
+    background-color: orangered;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 2.5rem;
@@ -596,7 +632,7 @@ margin-top: 3.5rem;
 }
 .inside_proj_1 img{
     border-style: solid;
-    border-color: rgb(255, 106, 0);
+    border-color: orangered;
     border-width: 0.9rem;
     border-radius: 6px;
     width: 70%;
@@ -604,7 +640,7 @@ margin-top: 3.5rem;
     
 }
 .myproj_img1 h2{
-    color: rgb(68, 68, 68);
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     margin-top: 2.5rem;
     margin-bottom: 2rem; /* king ina bat di ka gumagana*/
@@ -616,7 +652,7 @@ margin-top: 3.5rem;
     text-align: left;
 }
 .description_proj p{
-    color: rgb(68, 68, 68);
+    color: rgb(251, 251, 251);
     font-size: 1.2rem;
 }
 .proj_btn{
@@ -628,7 +664,7 @@ margin-top: 3.5rem;
 }
 .proj_btn a{
     text-align: center;
-    color: rgb(68, 68, 68);
+    color: rgb(238, 238, 238);
     text-decoration: none;
     width: 8rem;
     margin: 0 5px 0 0;
@@ -636,12 +672,12 @@ margin-top: 3.5rem;
     border-style: solid;
     border-width: 2px;
     border-radius: 6px;
-    border-color: rgb(68, 68, 68);
+    border-color: orangered;
 }
 .proj_btn a:hover{
-    background-color: rgb(255, 106, 0);
+    background-color: orangered;
     color: white;
-    border-color: rgb(255, 106, 0);
+    border-color: orangered;
     transition: 0.3s;
 }
 
@@ -651,7 +687,7 @@ margin-top: 3.5rem;
     padding-right: 1rem;
 }
 .visit_git h2{
-    color: rgb(68, 68, 68);
+    color: rgb(255, 255, 255);
 }
 
 .github_direct{
@@ -669,7 +705,7 @@ margin-top: 3.5rem;
     position: relative;
     border-radius: 0.35em; 
     border-style: solid;
-    border-color: rgb(255, 89, 0, 0.6);
+    border-color: orangered;
     border-width: we0.5rem;
 }
 .box_1 img{
@@ -684,7 +720,7 @@ margin-top: 3.5rem;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     border-style: solid;
-    border-color: rgb(255, 106, 0);
+    border-color: orangered;
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
     padding-left: 2.5rem;
@@ -722,7 +758,7 @@ margin-top: 3.5rem;
     position: absolute;
     top: 1rem;
     right: 2rem;
-    color: #ff4d00;
+    color: orangered;
 }
 
 .container_3{
@@ -743,7 +779,7 @@ margin-top: 3.5rem;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    background-color: rgb(255, 105, 0);
+    background-color: orangered;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 2.5rem;
@@ -847,7 +883,7 @@ margin-top: 3.5rem;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 6px;
-    background-color: #ff4d00;
+    background-color: orangered;
     border-style: none;
     font-size: 1rem;
     font-weight: 600;
@@ -864,6 +900,11 @@ margin-top: 3.5rem;
 }
 
 
+.container_4{
+    background-image: url('2x2_Edwards.png');
+     
+}
+
 .footer{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -874,6 +915,12 @@ margin-top: 3.5rem;
     color: aliceblue;
 }
 
+
+
+/* Laptop */
+@media(max-width: 1024px){
+    
+}
 
 
 /* Mobile */
@@ -934,7 +981,7 @@ margin-top: 3.5rem;
     /* Container_2 mobile version */
     .inside_proj_1 img{
     border-style: solid;
-    border-color: rgb(255, 106, 0);
+    border-color: orangered;
     border-width: 0.4rem;
     border-radius: 6px;
     width: 100%;
