@@ -955,7 +955,7 @@ margin-top: 3.5rem;
 
 
 /* Laptop */
-@media only screen and (min-width: 1272px){
+@media only screen and (max-width: 1272px){
     
     #nav_id{
         
