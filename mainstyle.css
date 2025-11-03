@@ -955,8 +955,11 @@ margin-top: 3.5rem;
 
 
 /* Laptop */
-@media(max-width: 1300px){
+@media(min-width: 1000px){
     
+    #nav_id{
+        padding: 2000px 10px;
+    }
     .profile_pic{
         min-width: 480px;
         text-align: center;
