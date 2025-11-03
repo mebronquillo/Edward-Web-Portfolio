@@ -955,7 +955,8 @@ margin-top: 3.5rem;
 
 
 /* Laptop */
-@media(max-width: 1272px){
+@media(min-width: 1024px)and
+(max-width: 1272px){
     
     #nav_id{
         
