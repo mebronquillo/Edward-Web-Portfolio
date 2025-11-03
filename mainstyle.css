@@ -955,8 +955,18 @@ margin-top: 3.5rem;
 
 
 /* Laptop */
-@media(max-width: 1024px){
+@media(max-width: 1300px){
     
+    .profile_pic{
+        min-width: 480px;
+        text-align: center;
+        align-self: last baseline;
+    }
+
+    .profile_pic img{
+        width: 60%;
+    }
+
 }
 
 
