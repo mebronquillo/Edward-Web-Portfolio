@@ -955,11 +955,8 @@ margin-top: 3.5rem;
 
 
 /* Laptop */
-@media(min-width: 1272px){
+@media screen and (min-width: 994px) and (max-width: 1272px) and (-webkit-min-device-pixel-ratio: 1) and (min-resolution: 102dpi){
     
-    #nav_id{
-        
-    }
     .profile_pic{
         min-width: 480px;
         text-align: center;
