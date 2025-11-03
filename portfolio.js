@@ -101,6 +101,9 @@ randomTextDisplay.style.display = 'none';
 });
 
 
+// aos animation
+
+
 
 
 
