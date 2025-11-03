@@ -9,8 +9,8 @@ body{
 
 .nav_bar{
     width: 100%;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    height: 7vh;
+    padding: 40px 10px;
     background-color: rgb(67, 68, 68);
     display: flex;
     justify-content: end;
@@ -20,7 +20,9 @@ body{
     box-shadow: 1px 1px 15px black;
 }
 
-
+#nav_id{
+    transition: 0.4s;
+}
 
 .inside_navbar{ 
     position: relative;
@@ -107,6 +109,9 @@ body.dont_scroll{
     overflow: hidden;
 }
 
+
+
+
 .nav_aboutme{
     height: 100%;
     width: 0;
@@ -137,6 +142,7 @@ body.dont_scroll{
     grid-auto-rows: min-content;
     text-align: center;
 }
+
 
 
 .nav_pic img{
@@ -268,6 +274,9 @@ body.dont_scroll{
 .nav_box h3{
     color: orangered;
 }
+.nav_box p{
+    padding: 0.5rem;
+}
 .nav_box1{
     background-color: rgb(61, 61, 61);
     width: 45%;
@@ -277,6 +286,9 @@ body.dont_scroll{
 }
 .nav_box1 h3{
     color: orangered;
+}
+.nav_box1 p{
+    padding: 0.5rem;
 }
 .nav_box2{
     background-color: rgb(61, 61, 61);
@@ -288,6 +300,9 @@ body.dont_scroll{
 .nav_box2 h3{
     color: orangered;
 }
+.nav_box2 p{
+    padding: 0.5rem;
+}
 .nav_box3{
     background-color: rgb(61, 61, 61);
     width: 45%;
@@ -297,6 +312,9 @@ body.dont_scroll{
 }
 .nav_box3 h3{
     color: orangered;
+}
+.nav_box3 p{
+    padding: 0.5rem;
 }
 
 .nav_box4 h3{
@@ -309,13 +327,16 @@ body.dont_scroll{
     border-radius: 6px;
     padding: 0.5rem;
 }
+.nav_box4 p{
+    padding: 0.5rem;
+}
 
 
 
 @media(max-width: 1300px){
     .nav_pic img{
         margin-top: 5rem;
-        width: 20rem;
+        width: 70%;
     }
     .nav_box{
         width: 50vw;
@@ -341,7 +362,10 @@ body.dont_scroll{
 
 /* mobile version of aboutme nav */
 @media(max-width: 768px){
-    
+    .nav_pic img{
+        margin-top: 5rem;
+        width: 20rem;
+    }
     .nav_aboutme{
         display: grid;
         grid-template-columns: 1fr;
@@ -428,10 +452,9 @@ body.dont_scroll{
 }
 
 .container_1{
-   
+    background-color: rgb(44, 44, 44);
 }
 .inside_container_1{
-    background-color: rgb(44, 44, 44);
     height: 100vh; /* delete this if using other image responsive */
     display: flex;
     align-self: center;
@@ -572,7 +595,10 @@ margin-top: 3.5rem;
 }
 
 
-
+#activate_aos .show.aos{
+    opacity: 1;
+    transform: scale(1);
+}
 
 .container_2{
     width: 100%;
@@ -582,7 +608,7 @@ margin-top: 3.5rem;
 
 .inside_container_2{
     text-align: center;
-    padding-top: 12rem;
+    padding-top: 10rem;
     padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
@@ -617,16 +643,19 @@ margin-top: 3.5rem;
     justify-content: center;
 }
 .myproj_img{
+    max-width: 1000px;
     padding: 1rem;
     margin-left: 10%;
     margin-right: 10%;
     display: flex;
     height: 100%;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .myproj_img1{
-    width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -635,7 +664,7 @@ margin-top: 3.5rem;
     border-color: orangered;
     border-width: 0.9rem;
     border-radius: 6px;
-    width: 70%;
+    width: 100%;
     text-align: center;
     
 }
@@ -763,11 +792,12 @@ margin-top: 3.5rem;
 
 .container_3{
     width: 100%;
-    background-color: antiquewhite;
+    height: 100%;
+    background-color: rgb(61, 61, 61);;
 }
 .inside_container_3{
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 8.5rem;
     padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
@@ -796,6 +826,7 @@ margin-top: 3.5rem;
 }
 .contact_text p{
     font-size: 1.3rem;
+    color: white;
 }
 
 .form_input{
@@ -811,35 +842,38 @@ margin-top: 3.5rem;
     row-gap: 2rem;
 }
 .email_box{
-    background-color: gray;
+    background-color: orangered;
     padding: 1.5rem;
     border-radius: 6px;
     display: grid;
     row-gap: 0.8rem;
 }
 .email_box p{
+    font-weight: 500;
     color: white;
     margin: 0;
 }
 .number_box{
-    background-color: gray;
+    background-color: orangered;
     padding: 1.5rem;
     border-radius: 6px;
     display: grid;
-    row-gap: 0.8rem;
+    row-gap: 2rem;
 }
 .number_box p{
+    font-weight: 500;
     color: white;
     margin: 0;
 }
 .viber_box{
-    background-color: gray;
+    background-color: orangered;
     padding: 1.5rem;
     border-radius: 6px;
     display: grid;
     row-gap: 0.8rem;
 }
 .viber_box p{
+    font-weight: 500;
     color: white;
     margin: 0;
 }
@@ -848,30 +882,36 @@ margin-top: 3.5rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    row-gap: 3rem;
+    row-gap: 1.8rem;
     width: 30rem;
 }
 
 .inside_div_form input{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
     padding: 0.8rem;
     border-radius: 6px;
     border-style: solid;
-    border-color: grey;
+    border-color: orangered;
     border-width: 0.2rem;
     background-color: transparent;
     outline: none;
 }
 .inside_div_form ::placeholder{
-    color: rgb(68, 68, 68);
+    color: rgb(255, 255, 255);
     font-size: 1rem;
     font-weight: 600;
 }
 .inside_div_form textarea{
     height: 8rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
     padding: 0.8rem;
     border-radius: 6px;
     border-style: solid;
-    border-color: gray;
+    border-color: orangered;
     border-width: 0.2rem;
     background-color: transparent;
     outline: none;
@@ -900,10 +940,7 @@ margin-top: 3.5rem;
 }
 
 
-.container_4{
-    background-image: url('2x2_Edwards.png');
-     
-}
+
 
 .footer{
     padding-top: 50px;
@@ -998,7 +1035,7 @@ margin-top: 3.5rem;
     margin-right: auto;
 }
     .myproj_img1 h2{
-    color: rgb(68, 68, 68);
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 1.5rem;

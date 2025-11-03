@@ -16,8 +16,8 @@
 
 <body>
     
-    <div class="nav_bar">
-        <div class="inside_navbar" id="nav_Menu">
+    <div class="nav_bar" id="nav_id"> <!--id here is for nav animation menu-->
+        <div class="inside_navbar" >
 
             <div class="box1"  data-aos="fade-right" data-aos-delay="0" data-aos-once="true" data-aos-duration="300">
             <a href="index.html" class="boxs1">
@@ -44,8 +44,9 @@
             </a>
             </div>
 
-            <div class="box1"  data-aos="fade-right" data-aos-delay="600" data-aos-once="true" data-aos-duration="300">
-            <a onclick="direct_to_aboutme();  close_nav1()"  class="boxs1">
+            <!--  -->
+            <div class="box1" id="aos_anims">
+            <a onclick="direct_to_aboutme();  close_nav1()" class="boxs1" data-aos="fade-right" data-aos-delay="600" data-aos-once="true" data-aos-duration="300">
 
                 <div class="koma">
                 <i class=fas>&#xf2bd;</i>
@@ -124,7 +125,7 @@
                 <div class="ClickMe">
                 <a class="visit_nav"><h3 style="color: orangered;">Visit me</h3></a>
                 <a href="https://www.facebook.com/edwardronquillo3" target="_blank" class="logo" data-aos="fade-right" data-aos-delay="600" data-aos-once="true" data-aos-duration="100"><i style="font-size: 24px;" class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://www.linkedin.com/in/edward-ronquillo-166584262" class="logo" target="_blank" class="ko" data-aos="fade-up" data-aos-delay="900" data-aos-once="true" data-aos-duration="100"><i style="font-size: 24px;" class="fa-brands fa-sqaure-linkedin">&#xf08c;</i></a>
+                <a href="https://www.linkedin.com/in/edward-ronquillo-275792390" class="logo" target="_blank" class="ko" data-aos="fade-up" data-aos-delay="900" data-aos-once="true" data-aos-duration="100"><i style="font-size: 24px;" class="fa-brands fa-sqaure-linkedin">&#xf08c;</i></a>
                 <a href="https://github.com/mebronquillo" target="_blank" class="logo" data-aos="fade-up" data-aos-delay="1200" data-aos-once="true" data-aos-duration="100"><i style="font-size: 24px;" class="fa-brands fa-github"></i></a>
                 <a href="https://www.instagram.com/_edwardronquillo_" class="logo" target="_blank" class="ko" data-aos="fade-left" data-aos-delay="1500" data-aos-once="true" data-aos-duration="100"><i style="font-size: 24px;" class="fa-brands fa-instagram"></i></a>
             </div>
@@ -171,7 +172,7 @@
                             <p data-aos="flip-left" data-aos-delay="300" data-aos-once="true" data-aos-duration="400">
                                 A full stack web development, this is for customer inquiring hotel room and land. Also this website is already exist, 
                                 but one of the client working here, contact me and build the clone version of this website.
-                                Built using HTML, CSS, JavaScript, PHP, MySQL and Python and today is still currently working on progress.
+                                Built using HTML, CSS, JavaScript, Java/Python, MySQL and Python and today is still currently working on progress.
                             </p>
                             <div class="proj_btn">
                             <a href="https://github.com/mebronquillo/Web_project" target="_blank" data-aos="fade-right" data-aos-delay="300" data-aos-once="true" data-aos-duration="400">Source Code</a>
@@ -226,6 +227,7 @@
                         <p>Edward Ronquillo</p>
                     </div>
                 </div>
+                
                 <form action="portfolio-mail.php" method="post" class="inside_div_form">           
                     <input type="text" name="name" placeholder="NAME" required>
                     <input type="text" name="subject" placeholder="SUBJECT" required>
@@ -247,23 +249,27 @@
     </div>
 
     <div class="container_4">
-htrh
+
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
+    <script>AOS.init({
+    duration: 800,
+    once: true
+    });</script>
 
     <div class="nav_aboutme" id="nav_aboutme_id">
         <a class="closebtn" onclick="direct_to_aboutme(); close_nav()"><i class="fa" style="font-size: 24px;">&times;</i></a>
         <div class="nav_body">  
             <div class="nav_pic">
-                <img src="images/nav_img/edward.png">
+                <img src="images/nav_img/edward.png"data-aos="fade-up" data-aos-duration="1200">
+
                 <h2>Edward B. Ronquillo</h2>
                 
                 <div class="logo_nav">
                     <a class="visit_nav_title"><h3>Visit Me</h3></a>
-                    <a href="https://www.facebook.com/edwardronquillo3" target="_blank" class="logo_nav1"><i style="font-size: 24px;" class="fa-brands fa-square-facebook"></i></a>
-                    <a href="https://www.linkedin.com/in/edward-ronquillo-166584262" target="_blank" class="logo_nav1"><i style="font-size: 24px;" class="fa-brands fa-sqaure-linkedin">&#xf08c;</i></a>
+                    <a href="https://www.facebook.com/edwardronquillo3" target="_blank" class="logo_nav1" ><i style="font-size: 24px;" class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/edward-ronquillo-275792390" target="_blank" class="logo_nav1"><i style="font-size: 24px;" class="fa-brands fa-sqaure-linkedin">&#xf08c;</i></a>
                     <a href="https://github.com/mebronquillo" target="_blank" class="logo_nav1"><i style="font-size: 24px;" class="fa-brands fa-github"></i></a>
                     <a href="https://www.instagram.com/_edwardronquillo_" target="_blank" class="logo_nav1"><i style="font-size: 24px;" class="fa-brands fa-instagram"></i></a>
                 </div>
@@ -281,7 +287,7 @@ htrh
                 <div class="description_me">
                     <h2>About Me</h2>
                     <p>
-                        Hi I'm Edward a graduate of Bachelor's degree in computer science, 
+                        Hi I'm Edward a Graduate of Bachelor's degree in computer science, 
                         I am eager to leverage my academic foundation 
                         passionate about Web Developer. I am dedicated 
                         to applying my knowledge and skills and innovation 
@@ -332,11 +338,9 @@ htrh
                             <i class="fa-solid fa-window-maximize" style="color: gray; font-size: 25px;"></i>Web Development/Back-End
                         </h3>
                         <p style="color: white;">
-                            Blah blah blah Blah blah blah
-                            Blah blah blah Blah blah blah
-                            Blah blah blah Blah blah blah
-                            Blah blah blah Blah blah blah
-                            Blah blah blah Blah blah blah
+                            I also do the role of a back-end developer, creating a logic, database structure. And I build system using PHP and Mysql Workbench to handle user data, forms,
+                            and dynamic content securely and efficiently. I also do CRUD operations (Create, Read, Update, Delete) to manage data effectively. 
+                            
                         </p>  
                     </div>
 
@@ -357,8 +361,8 @@ htrh
                             <i class="fa-brands fa-php"style="color: gray; font-size: 25px;"></i>PHP
                         </h3>
                         <p style="color: white;">
-                            I also coding using PHP for my web development project, I use this for connecting my website to the database and also for sending emails and store
-                            the input form the web page.
+                            I also code using PHP for my web development project, I use this for connecting my website to the database and also for sending emails and store
+                            the input form data from the web page. And yet PHP is what used always when building a dynamic website and storing data to any mysql idle like phpmyadmin or mysql workbench etc.
                         </p>  
                     </div>
 
