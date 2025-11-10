@@ -273,14 +273,22 @@ body.dont_scroll{
 }
 
 .download_resume{
-    text-align: center;
     display: grid;
-    height: 100vh;
+    height: auto;
+}
+.inside_download_res{
+    margin-left: 2rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.inside_download_res a{
+    text-decoration: none;
+    color: orangered;
+    font-weight: 600;
 }
 
-.inside_download_res{
-    align-self: center
-}
+
 
 .box_details{
     display: flex;
