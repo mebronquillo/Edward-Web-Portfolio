@@ -2,12 +2,29 @@
 
 window.onscroll = function() {scrollFunction()};
 
+var nav_barsmull = document.getElementById("nav_id");
+var nav_smallboxbtn = document.getElementById("smallbox");
+var nav_smallboxbtn1 = document.getElementById("smallbox1");
+var nav_smallboxbtn2 = document.getElementById("smallbox2");
+var nav_smallboxbtn3 = document.getElementById("smallbox3");
+
 function scrollFunction(){
     if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+        
+        // nav_barsmull.style.padding = "10px 10px";
         document.getElementById("nav_id").style.padding = "15px 10px";
+        document.getElementById("smallbox"). style.padding = "5px 20px";
+        document.getElementById("smallbox1"). style.padding = "5px 20px";
+        document.getElementById("smallbox2"). style.padding = "5px 20px";
+        document.getElementById("smallbox3"). style.padding = "5px 20px";
     } else{
-        document.getElementById("nav_id").style.padding = "40px 10px";
-    }
+        document.getElementById("nav_id").style.padding = "30px 10px";
+        document.getElementById("smallbox").style.padding = "10px 25px";
+        document.getElementById("smallbox1").style.padding = "10px 25px";
+        document.getElementById("smallbox2").style.padding = "10px 25px";
+        document.getElementById("smallbox3").style.padding = "10px 25px";
+        // nav_barsmull.style.padding = "20px 10px";
+    } 
 }
 function direct_to_project(){
     const scrolltoproject = document.getElementById("im_the_project");
@@ -37,7 +54,6 @@ var body = document.body;
 function direct_to_aboutme(){
     document.getElementById("nav_aboutme_id").style.width = "100%";
     body.classList.toggle("dont_scroll");
-    
 }
 
 
@@ -47,12 +63,7 @@ function close_nav(){
     
 }
 
-document.getElementById("aos_anims").addEventListener("click", function(){
-    const anim_aoss = document.getElementById("show_aos");
-    anim_aoss.style.display = "block";
 
-    AOS.refresh();
-});
 
 
 
