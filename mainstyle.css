@@ -493,7 +493,7 @@ body.dont_scroll{
 }    */
 
 .profile_pic{
-    min-width:680px;
+    min-width:700px;
     text-align: center;
     align-self:last baseline;
 }
@@ -529,11 +529,6 @@ body.dont_scroll{
   top: 70%;
 }
 
-
-
-.profile_detailme{
-    
-}
 
 .profile_detailme h4{
     width: 70%;
@@ -978,7 +973,34 @@ margin-top: 3.5rem;
     }
 
     .profile_pic img{
-        width: 60%;
+        width: 90%;
+    }
+    .profile_detailme{
+        margin-top: 2.5rem;
+    }
+    .name_me h2{
+        font-size: 2.1rem;
+    }
+    .profile_detailme h3{
+        font-size: 1rem;
+    }
+    .profile_detailme h4{
+        width: 80%;
+        color: rgb(200, 198, 198);
+        font-weight: 400;
+    }
+    .button-to-nav_about{
+        margin-top: 2rem;
+    }
+    .button-to-nav_about a{
+        padding-left: 1.3rem;
+        padding-right: 1.3rem;
+        padding-top: 1.3rem;
+        padding-bottom: 1.3rem;
+    }
+
+    .ClickMe{
+        margin-top: 2.5rem;
     }
 
 }
@@ -992,7 +1014,6 @@ margin-top: 3.5rem;
         row-gap: 0.2rem;
     }
     .profile_pic{
-        margin-top: -0.5rem;
         min-width: 1rem;
         margin-bottom: 0;
     }
@@ -1000,14 +1021,20 @@ margin-top: 3.5rem;
         margin-top: 1rem;
         border-radius: 25rem;
         border: solid grey;
-        width: 14rem;
+        width: 10rem;
         justify-content: center;
+        margin-bottom: 0;
     }
     .profile_detailme{
+        align-self: first baseline;
         text-align: center;
+        margin-top: 0;
     }
     .name_me{
         justify-content: center;
+    }
+    .name_me h2{
+        font-size: 2rem;
     }
     .profile_detailme h4{
         width: 100%;
@@ -1017,6 +1044,17 @@ margin-top: 3.5rem;
     }
     .random_message{
         top: 10rem;
+    }
+    
+    .button-to-nav_about{
+        margin-top: 1.5rem;
+    }
+    .button-to-nav_about a{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .ClickMe{
+        margin-top: 2rem;
     }
 
 }
