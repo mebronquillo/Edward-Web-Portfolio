@@ -159,7 +159,9 @@ body.dont_scroll{
     text-align: center;
 }
 
-
+.nav_pic{
+    height: 100%;
+}
 
 .nav_pic img{
     margin: 1.5rem;
@@ -269,6 +271,17 @@ body.dont_scroll{
     color: orangered;
     font-size: 2rem;
 }
+
+.download_resume{
+    text-align: center;
+    display: grid;
+    height: 100vh;
+}
+
+.inside_download_res{
+    align-self: center
+}
+
 .box_details{
     display: flex;
     flex-wrap: wrap;
@@ -380,7 +393,7 @@ body.dont_scroll{
 @media(max-width: 768px){
     .nav_pic img{
         margin-top: 5rem;
-        width: 20rem;
+        width: 25;
     }
     .nav_aboutme{
         display: grid;
@@ -1057,7 +1070,23 @@ margin-top: 3.5rem;
         margin-top: 2rem;
     }
 
+    .nav_body{
+        height: auto;
+        
+    }
+
+    /* nav about me */
+    .nav_pic{
+        margin-top:5rem;
+        align-self: center;
+    }
+    .nav_pic img{
+        width: 15rem;
+        border-radius: 6px;
+    }
+
 }
+
 
 @media(max-width: 768px){
     /* Container_1 mobile version */
@@ -1122,6 +1151,35 @@ margin-top: 3.5rem;
     width: 100%;
     padding: 0.8rem; 
     }
+    .nav_body{
+        height: auto;
+        display: grid;
+        
+    }
+    .nav_pic{
+        align-self:first baseline;
+    }
+    .nav_pic img{
+        width: 18rem;
+        border-radius: 6px;
+    }
+
 
     /* Navigator of About me */
+}
+/* another mobile resolution */
+@media(max-width: 430px){
+    .nav_body{
+        height: 100vh;
+        display: grid;
+    }
+    .nav_pic{
+        align-self: center;
+    }
+    .nav_pic img{
+        width: 10rem;
+    }
+    .nav_pic h2{
+        font-size: 2rem;
+    }
 }
