@@ -990,11 +990,11 @@ margin-top: 3.5rem;
 @media screen and (min-width: 994px) and (max-width: 1272px) and (-webkit-min-device-pixel-ratio: 1) and (min-resolution: 102dpi){
  
     .profile_pic{
-        min-width: 481px;
+        min-width: 470px;
     }
 
     .profile_pic img{
-        width: 90%;
+        width: 70%;
     }
     .profile_detailme{
         margin-top: 2.5rem;
