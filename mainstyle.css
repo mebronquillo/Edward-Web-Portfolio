@@ -890,7 +890,7 @@ margin-top: 3.5rem;
     padding: 1.5rem;
     border-radius: 6px;
     display: grid;
-    row-gap: 2rem;
+    row-gap: 1rem;
 }
 .number_box p{
     font-weight: 500;
@@ -1152,11 +1152,61 @@ margin-top: 3.5rem;
     .nav_pic h2{
         font-size: 2rem;
     }
+
+   /* container 2 */
+    .inside_container_2{
+        padding-top: 6rem;
+    }
+    .myproj_title{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-bottom: 0;
+    }
+    .myproj_title h2{
+        font-size: 1.1rem;
+    }
+    .inside_proj_1{
+        max-width: 560px;
+    }
+    .inside_proj_1 img{
+        margin-top: -1rem;
+        border-width: 0.5rem;
+        width: 100%;
+    }
+    .myproj_img1 h2{
+        margin-top: 1.5rem;
+    }
+    .description_proj p{
+        margin-top: 0.2rem;
+    }
+
+    /* Container 3 */
+
+    .inside_container_3{
+        padding-top: 6rem;
+    }
+    .mycont_tile{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-bottom: 0;
+    }
+    .mycont_tile h2{
+        font-size: 1.1rem;
+    }
+
+    .contact_text{
+        margin-top: 0.5rem;
+    }
+    
 }
 
 
 /* Laptop */
-@media screen and (min-width: 200px) and (max-width: 1272px) and (-webkit-min-device-pixel-ratio: 1) and (min-resolution: 102dpi){
+@media screen and (min-width: 360px) and (max-width: 1272px) and (-webkit-min-device-pixel-ratio: 1) and (min-resolution: 102dpi){
  
     .profile_pic{
         min-width: 470px;
@@ -1219,7 +1269,7 @@ margin-top: 3.5rem;
         font-size: 1.5rem;
     }
     /* ---for laptop woking only---- */
-    @media screen and (min-width: 200px) and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1) and (min-resolution: 102dpi){
+    @media screen and (min-width: 360px) and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1) and (min-resolution: 102dpi){
         .inside_container_1{
         display: grid;
         row-gap: 0.2rem;
@@ -1274,7 +1324,7 @@ margin-top: 3.5rem;
     }
     .nav_pic{
         margin-top: 3rem;
-        align-self: center;
+        align-self: first baseline;
     }
     .nav_pic img{
         width: 10rem;
@@ -1289,6 +1339,8 @@ margin-top: 3.5rem;
         font-size: 1.2rem;
     }
     }
+
+    
 
 
 }
