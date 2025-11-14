@@ -1268,6 +1268,7 @@ margin-top: 3.5rem;
     .nav_to_contactme a{
         font-size: 1.5rem;
     }
+
     /* ---for laptop woking only---- */
     @media screen and (min-width: 360px) and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1) and (min-resolution: 102dpi){
         .inside_container_1{
@@ -1339,8 +1340,101 @@ margin-top: 3.5rem;
         font-size: 1.2rem;
     }
     }
+    /*  */
 
-    
+    /* Container 2 */
+    .inside_container_2{
+        padding-top: 7rem;
+    }
+    .myproj_title{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-bottom: 0;
+    }
+    .myproj_title h2{
+        font-size: 1.1rem;
+    }
+    .inside_proj_1{
+        width: 100%;
+    }
+    .inside_proj_1 img{
+        margin-top: -1rem;
+        border-width: 0.5rem;
+        width: 23rem;
+        text-align: center;
+    }
+    .description_proj p{
+        margin-top: 0.2rem;
+    }
+    /*  */
+
+    /* Container 3 */
+    .inside_container_3{
+        padding-top: 6rem;
+    }
+    .mycont_tile{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-bottom: 0;
+    }
+    .mycont_tile h2{
+        font-size: 1.1rem;
+    }
+    .contact_text p{
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+        font-size: 1rem;
+    }
+    .box_details_contact{
+        row-gap: 1rem;
+    }
+    .email_box{
+        padding: 1rem;
+        row-gap: 0.5rem;
+    }
+    .email_box p{
+        font-size: 13px;
+    }
+    .number_box{
+        padding: 1rem;
+        row-gap: 0.5rem;
+    }
+    .number_box p{
+        font-size: 13px;
+    }
+    .viber_box{
+        padding: 1rem;
+        row-gap: 0.5rem;
+    }
+    .viber_box p{
+        font-size: 13px;
+    }
+    .inside_div_form{
+        align-self: first baseline;
+        row-gap: 1.3rem;
+    }
+    .inside_div_form input{
+        padding: 0.2rem;
+        font-size: 0.9rem;
+        border-width: 2px;
+    }
+    .inside_div_form ::placeholder{
+        font-size: 0.7rem;
+    }
+    .inside_div_form textarea{
+        height: 5rem;
+        font-size: 0.7rem;
+        border-width: 2px;
+    }
+    .inside_div_form button{
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
 
 
 }
