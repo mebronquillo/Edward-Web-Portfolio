@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <title>Edward Portfolio</title>
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="mainstyle.css">
@@ -15,11 +16,16 @@
 </head>
 
 <body>
+    <div id="home_anim" onclick="home()">
+        <a>
+            <i class="fa">&#xf015;</i>
+        </a>
+    </div>
     
     <div class="nav_bar" id="nav_id"> <!--id here is for nav animation menu-->
         <div class="inside_navbar" >
 
-            <div class="box1"  data-aos="fade-right" data-aos-delay="0" data-aos-once="true" data-aos-duration="300" >
+        <nav class="box1"  data-aos="fade-right" data-aos-delay="0" data-aos-once="true" data-aos-duration="300" >
             <a href="index.html" class="boxs1" id="smallbox">
 
                 <div class="koma">
@@ -29,9 +35,9 @@
                 </h2>
                 </div>
             </a>
-            </div>
+        </nav>
 
-            <div class="box1" data-aos="fade-right" data-aos-delay="300" data-aos-once="true" data-aos-duration="300">
+        <nav class="box1" data-aos="fade-right" data-aos-delay="300" data-aos-once="true" data-aos-duration="300">
             <a onclick="direct_to_project()" class="boxs1" id="smallbox1">
 
                 <div class="koma">
@@ -42,11 +48,11 @@
                 </div>
                 
             </a>
-            </div>
+        </nav>
 
             <!--  -->
-            <div class="box1" data-aos="fade-right" data-aos-delay="600" data-aos-once="true" data-aos-duration="300">
-            <a onclick="direct_to_aboutme();  close_nav1()" class="boxs1" id="smallbox2">
+        <nav class="box1" data-aos="fade-right" data-aos-delay="600" data-aos-once="true" data-aos-duration="300">
+            <a onclick="direct_to_aboutme()" class="boxs1" id="smallbox2">
 
                 <div class="koma">
                 <i class=fas>&#xf2bd;</i>
@@ -56,9 +62,9 @@
                 </div>
 
             </a>
-            </div>
+        </nav>
 
-            <div class="box1"  data-aos="fade-right" data-aos-delay="900" data-aos-once="true" data-aos-duration="300">
+        <nav class="box1"  data-aos="fade-right" data-aos-delay="900" data-aos-once="true" data-aos-duration="300">
             <a onclick="direct_to_contactme()" class="boxs1" id="smallbox3">
                 
                 <div class="koma">
@@ -69,7 +75,7 @@
                 </div>
 
             </a>
-            </div>
+        </nav>
         
         </div>
 
@@ -87,7 +93,7 @@
 
     </div>
     
-    <div class="container_1">
+    <section class="container_1" id="im_the_home">
         
         <div class="inside_container_1">
            
@@ -114,7 +120,7 @@
                 <h3>Front-End/Website Developer</h3>
                 
                 <h4>
-                    I'm a Front-End Developer who loves Designing Websites, I also had knowledge of Web Development.
+                    I'm a Front-End Developer who loves Designing UI of the Websites. I also do Back-End Development .
                 </h4>
                 
 
@@ -148,50 +154,104 @@
             <!-- Remove this.... this is only for about me -->
 
         
-    </div>
+    </section>
 
-    <div class="container_2" id="im_the_project">   
+    <section class="container_2" id="im_the_project">   
         <div class="inside_container_2">
             
             <div class="myproj_title" data-aos="fade-down" data-aos-delay="0" data-aos-once="true" data-aos-duration="400">
                 <h2>My Projects</h2>
             </div>
 
-            <div class="myproj_">      
-                
-                    <div class="myproj_img">
-                        <div class="myproj_img1">
-                            <a class="inside_proj_1" data-aos="fade-down" data-aos-delay="300" data-aos-once="true" data-aos-duration="300">
-                                <img src="images/myproject_img/1.JPG">
-                                <!-- Fix the Image -->
-                            </a>
+            
+            <div class="typesofprojects">
+            <!-- PROJECT PACKS -->
+            <div class="project_items">
 
-                            <h2 data-aos="fade-down" data-aos-delay="600" data-aos-once="true" data-aos-duration="400">Ortigas Land Website</h2>
+            <div class="project_img">
+                <img src="images/myproject_img/1.JPG" loading="lazy"> 
+            </div>
 
-                        <div class="description_proj">
-                            <p data-aos="flip-left" data-aos-delay="900" data-aos-once="true" data-aos-duration="400">
-                                A full stack web development, this is for customer inquiring hotel room and land. Also this website is already exist, 
-                                but one of the client working here, contact me and build the clone version of this website.
-                                Built using HTML, CSS, JavaScript, Java/Python, MySQL and Python and today is still currently working on progress.
-                            </p>
-                            <div class="proj_btn">
-                            <a href="https://github.com/mebronquillo/Web_project" target="_blank" data-aos="fade-right" data-aos-delay="1150" data-aos-once="true" data-aos-duration="400">Source Code</a>
-                            <a href="https://mebronquillo.github.io/Web_project/mainwebsite" target="_blank" data-aos="fade-left" data-aos-delay="1150" data-aos-once="true" data-aos-duration="400">Live View</a>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
+            <div class="insidecon2_title">
+                <h2>Ortigas Land Website</h2>
+            </div>
 
-                    <div class="visit_git" data-aos="fade-left" data-aos-delay="1500" data-aos-once="true" data-aos-duration="400">
-                        <h2>Other than that check my <a class="github_direct" href="https://github.com/mebronquillo" target="_blank" style="color: orangered;">Github</a> for updates or look other of my projects</h2>
-                    </div>
+            <div class="insidecon2_paragraph">
+                <p>
+                    A full-stack web application for customers to inquire about hotel rooms and properties. The original site already exists; an employee of that company contacted me to build a cloned version and requested several modifications. Built using HTML, CSS, JavaScript, PHP, and MySQL Workbench. Development is currently in progress.
+                </p>
+            </div>
+
+            <div class="insidecon2_btn">
+                <a href="https://mebronquillo.github.io/Web_project/mainwebsite" target="_blank" class="liveview_btn">LIVE VIEW</a>
+                <a href="https://github.com/mebronquillo/Web_project" target="_blank" class="sourcecode_btn">SOURCE CODE</a>
             </div>
             
-            
-        </div>
-    </div>
+            </div>
+            <!-- ------------- -->
 
-    <div class="container_3" id="im_the_contactme">
+            <!-- PROJECT PACKS-1 -->
+            <!-- <div class="project_items1">
+                <h2>Next project</h2>
+            </div> -->
+
+            <div class="project_items">
+
+            <div class="project_img">
+                <img src="images/myproject_img/food_vlogs.png"> 
+            </div>
+
+            <div class="insidecon2_title">
+                <h2>Food Recipe Vlog</h2>
+            </div>
+
+            <div class="insidecon2_paragraph">
+                <p>
+                    A responsive Food Recipe Vlog Website showcasing recipes with images, ingredients and step-by-step instructions. Built with HTML/CSS, Framework React,
+                    and MYSQL workbench and PHP.
+                </p>
+            </div>
+
+            <div class="insidecon2_btn">
+                <a href="#" class="liveview_btn">LIVE VIEW</a>
+                <a href="#" class="sourcecode_btn">SOURCE CODE</a>
+            </div>
+            
+            </div>
+
+            <div class="project_items">
+
+            <div class="project_img">
+                <img src="images/myproject_img/noimage.png" > <!--1858x942-->
+            </div>
+
+            <div class="insidecon2_title">
+                <h2>No Project Yet</h2>
+            </div>
+
+            <div class="insidecon2_paragraph">
+                <p>
+                    No details yet
+                </p>    
+            </div>
+
+            <div class="insidecon2_btn">
+                <a href="#" class="liveview_btn">LIVE VIEW</a>
+                <a href="#" class="sourcecode_btn">SOURCE CODE</a>
+            </div>
+            
+            </div>
+
+            </div>
+            
+            <div class="direct_to_git">
+                <h3>Other than that check my <a href="#"style="color: orangered;">Github</a> for updates or look other of my projects</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container_3" id="im_the_contactme">
         <div class="inside_container_3">
 
             <div class="mycont_tile" data-aos="fade-down" data-aos-delay="0" data-aos-once="true" data-aos-duration="400">
@@ -235,22 +295,15 @@
                     <textarea name="message" type=message placeholder="YOUR MESSAGE" rows="2" required></textarea>
                     <button type="submit"><i style="font-size: 24px;" class="material-icons">&#xe163;</i><p>Send Message</p></button>
                 </form>
-
-                
-
                 
             </div>
-
-
-
-
-                
+    
         </div>
-    </div>
+    </section>
 
-    <div class="container_4">
+    
 
-    </div>
+    
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init({
@@ -276,7 +329,7 @@
                 
                 <!-- Fix the Close and Direct -->
                 <div class="nav_to_contactme">
-                    <a>Contact me<i style='font-size: 15px' class='fas'>&#xf30b;</i></a>
+                    <a onclick="direct_to_aboutme(); direct_to_contactme(); close_nav()">Contact me<i style='font-size: 15px' class='fas'>&#xf30b;</i></a>
                 </div>
             </div>
         </div>
@@ -350,8 +403,8 @@
                         </h3>
                         <p style="color: white;">
                             I use MySQL for storing data, and the IDE I use is MySQL Workbench. 
-                            It’s where I keep some of the records from my web development projects. 
-                            For example, the portfolio website you’re viewing today uses a MySQL database 
+                            Its where I keep some of the records from my web development projects. 
+                            For example, the portfolio website your viewing today uses a MySQL database 
                             to store the messages you send to me. I also use phpMyAdmin to manage my MySQL databases.
                         </p>  
                     </div>
@@ -389,7 +442,7 @@
             <div class="download_resume">
                 <div class="inside_download_res">
                     <p>Also you can download my 
-                        <a href="my_resume/Edward Ronquillo Reume - Copy.docx" download="Edward_resume.docx">resume</a>
+                        <a href="my_resume/Edward-main_resume.docx" download="Edward_resume.docx">resume</a>
                         file.
                     </p>
                 </div>
@@ -398,7 +451,7 @@
         </div>
     </div>
 
-    <!-- <div>
+    <!-- <div class="sizelang">
         <h2>My current size of web</h2>
         <p id="demo"></p>
     </div>
@@ -411,9 +464,9 @@
     </script> -->
     
     <!-- Download my resume -->
-    <div class="footer">
+    <footer class="footer">
         <p>@ 2025 - Coded by Edward Ronquillo</p>
-    </div>
+    </footer>
 
     </div>
 

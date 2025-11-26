@@ -10,8 +10,7 @@ body{
 .nav_bar{
     width: 100%;
     height: 7vh;
-    
-    background-color: rgb(72, 92, 92);
+    background-color: rgb(61, 62, 62);
     display: flex;
     justify-content: end;
     align-items: center;
@@ -27,10 +26,10 @@ body{
 
 .inside_navbar{ 
     position: relative;
-    display: grid;
+    display: flex;
     justify-content: center;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    column-gap: 1.25rem;
+    flex-direction: row;
+    column-gap: 3rem;
     width: calc(100% - 0px); /* 80% */
 }
 .inside_navbar h2{
@@ -79,7 +78,6 @@ a.boxs1{
     justify-content: center;
     text-align: center;
     display: inline-block;
-    
     width: 125px;
     background: orangered;
     color: white;
@@ -92,14 +90,10 @@ a.boxs1{
     cursor: pointer;
 }
 a.boxs1:hover{
-    transform: translateY(-6px);
     box-shadow: 0 8px 14px rgba(0,0,0,0.25);
     background-color: rgb(36, 36, 36);
 }
-a.boxs1:active{
-    transform: translateY(0);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
+
 
 .box1{
     text-align: center;
@@ -124,6 +118,8 @@ a.boxs1:active{
 body.dont_scroll{
     overflow: hidden;
 }
+
+
 
 
 
@@ -220,7 +216,7 @@ body.dont_scroll{
     margin-left: 2rem;
 }
 .description_me h2{
-    color: orangered;
+    color: rgb(255, 255, 255);
     font-size: 2rem;
 }
 .description_me p{
@@ -257,10 +253,7 @@ body.dont_scroll{
         width: 53vw;
         margin-left: 2rem;
     }
-    .description_me1{
-        
-        /* Bahala na kung justity content center */
-    }
+    
 }
 
 .aboutme_details1{
@@ -495,7 +488,10 @@ body.dont_scroll{
     height: 100vh; /* delete this if using other image responsive */
     display: flex;
     align-self: center;
-    
+}
+.active_link{
+    color: rgb(255, 0, 0);
+    font-weight: 700;
 }
 
 /* For another design of my image responsive */
@@ -584,9 +580,7 @@ margin-top: 3.5rem;
     letter-spacing: 2rem;
 }
 
-@media(max-width: 1500px){
-    
-}
+
 
 .profile_detailme{ 
     align-self: center;
@@ -634,17 +628,17 @@ margin-top: 3.5rem;
 
 .container_2{
     width: 100%;
-    height: 100%;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
     background-color: rgb(61, 61, 61);
 }
 
 .inside_container_2{
     text-align: center;
-    padding-top: 10rem;
-    padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
 }
+
 .myproj_title{
     display: flex;
     justify-content: center;
@@ -662,117 +656,134 @@ margin-top: 3.5rem;
 }
 .myproj_title h2{
     color: white;
-}
-.myproj_{
-    margin-top: 1.5rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;  
-}
-.inside_proj_1{
-    justify-content: center;
-}
-.myproj_img{
-    max-width: 1000px;
-    padding: 1rem;
-    margin-left: 10%;
-    margin-right: 10%;
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    font-size: 1.3rem;
 }
 
-.myproj_img1{
-    margin-left: auto;
-    margin-right: auto;
+.typesofprojects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2.3rem;
+    row-gap: 1rem;
 }
-.inside_proj_1 img{
-    border-style: solid;
-    border-color: orangered;
-    border-width: 0.9rem;
+
+.project_items{
+    transition: 0.4s;
+    align-items: center;
+    margin-top: 1.5rem;
+    background-color: rgb(44, 46, 49);
     border-radius: 6px;
-    width: 100%;
-    text-align: center;
-    
-}
-.myproj_img1 h2{
-    color: rgb(255, 255, 255);
-    font-size: 2rem;
-    margin-top: 2.5rem;
-    margin-bottom: 2rem; /* king ina bat di ka gumagana*/
-}
-.description_proj{
+    max-width: 30rem;
+    height: 35rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: left;
+    box-shadow: 1px 1px 15px rgb(39, 38, 38);
 }
-.description_proj p{
-    color: rgb(251, 251, 251);
-    font-size: 1.2rem;
+
+.project_img{
+    margin-top: 2rem;
+    max-width: 760px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
 }
-.proj_btn{
+.project_img img{
+    width: 90%;
+    border-style: solid;
+    border-color: orangered;
+    border-radius: 6px;
+}
+
+.insidecon2_title h2{
+    color: white;
+    font-size: 1.7rem;
+    margin-bottom: 0;
+}
+.insidecon2_paragraph{
+    margin-top: 1rem;
+    height: 12rem;
+    overflow:scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+.insidecon2_paragraph p{
+    text-align:left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: white;
+    font-weight: 500;
+}
+
+.insidecon2_btn{
+    padding: 1rem;
+    justify-content: first baseline;
     display: flex;
-    justify-content: left;
-    justify-content: space-between;
-    margin-right: auto;
+    flex-direction: row;
     
 }
-.proj_btn a{
-    text-align: center;
-    color: rgb(238, 238, 238);
-    text-decoration: none;
-    width: 8rem;
-    margin: 0 5px 0 0;
-    padding: 0.5rem;
+.liveview_btn{
+    width: 120px;
+    max-width: 160px;
     border-style: solid;
     border-width: 2px;
-    border-radius: 6px;
     border-color: orangered;
-}
-.proj_btn a:hover{
-    background-color: orangered;
+    border-radius:  15px 0 15px 0px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
     color: white;
+    margin: 0 7px 0 0;
+}
+.liveview_btn:hover{
+    background-color: orangered;
+    transition: 0.3s;
+}
+.sourcecode_btn{
+    width: 120px;
+    max-width: 160px;
+    border-style: solid;
+    border-width: 2px;
     border-color: orangered;
+    border-radius:  0px 15px 0px 15px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    margin: 0 7px 0 0;
+}
+.sourcecode_btn:hover{
+    background-color: orangered;
     transition: 0.3s;
 }
 
-.visit_git{
-    margin-top: 5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-.visit_git h2{
-    color: rgb(255, 255, 255);
-}
 
-.github_direct{
+/* .project_items1{
+    background-color: #322f2f;
+    margin-top: 1.5rem;
+} */
+.direct_to_git{
+    margin-top: 1.5rem;
+}
+.direct_to_git h3{
+    color: white;
+    font-size: 1.4rem;
+}
+.direct_to_git a{
     text-decoration: none;
-    cursor: pointer;
 }
 
 
-.box_1{
-    width: 100%;
-    display: block;
-    margin: 0 0 1.5em 0;
-    cursor: pointer;
-    text-align: center;
-    position: relative;
-    border-radius: 0.35em; 
-    border-style: solid;
-    border-color: orangered;
-    border-width: we0.5rem;
-}
-.box_1 img{
-    width: 100%;
-    border-radius: 1%;
-}
 
 .middleviewbtn{
     position: absolute;
@@ -794,10 +805,7 @@ margin-top: 3.5rem;
 
 
 
-.inside_container_2 h1{
-    font-size: 2.5rem;
-    color: rgb(68, 68, 68);
-}
+
 
 .nav_contact_meh{
     display: grid;
@@ -825,12 +833,12 @@ margin-top: 3.5rem;
 .container_3{
     width: 100%;
     height: 100%;
-    background-color: rgb(61, 61, 61);;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-color: rgb(61, 61, 61);
 }
 .inside_container_3{
     text-align: center;
-    padding-top: 8.5rem;
-    padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
 }
@@ -851,6 +859,7 @@ margin-top: 3.5rem;
 }
 .mycont_tile h2{
     color: white;
+    font-size: 1.3rem;
 }
 
 .contact_text{
@@ -871,7 +880,7 @@ margin-top: 3.5rem;
 .box_details_contact{
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
+    row-gap: 2.5rem;
 }
 .email_box{
     background-color: orangered;
@@ -949,8 +958,8 @@ margin-top: 3.5rem;
     outline: none;
 }
 .inside_div_form button{
-    width: calc(100% - 200px);
-    padding: 1rem;
+    width: 15rem;
+    padding: .5rem;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -1059,10 +1068,31 @@ margin-top: 3.5rem;
 
 
 @media(max-width: 768px){
-    /* Container_1 mobile version */
+    /* homanav */
+    #home_anim{
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        
+    }
+    /* ------- */
+
+    /* navbar */
+    .inside_navbar{
+        column-gap: 1rem;
+    }
+    /* ------ */
+
+    /* Container_1 */
+    .inside_container_1{
+        height: 94vh;
+    }
+    .profile_pic{
+        margin-top: 0;
+        padding-top: 0;
+    }
     
-
-
     #title_project{
         height: 5rem;
     }
@@ -1076,35 +1106,75 @@ margin-top: 3.5rem;
     
     
 
-    /* Container_2 mobile version */
-    .inside_proj_1 img{
-    border-style: solid;
-    border-color: orangered;
-    border-width: 0.4rem;
-    border-radius: 6px;
-    width: 100%;
-    height: 100%;
-}
-    .myproj_img{
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-}
-.myproj_img1{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-    .myproj_img1 h2{
-    color: rgb(255, 255, 255);
-    font-size: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
+    /* Container_2 */
+
+    .inside_container_2{
+        padding-top: 0.5rem;
     }
+   .myproj_title{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-bottom: 0;
+   }
+   .myproj_title h2{
+    font-size: 1.1rem;
+   }
+
+   .project_items{
+    max-width: 20rem;
+    height: 30rem;
+   }
+   .insidecon2_paragraph{
+    width: 20rem;
+    overflow-y: scroll;
+    scrollbar-color: grey rgb(47, 47, 47);
+   }
+   .insidecon2_paragraph p{
+    text-align: center;
+   }
+
+   .liveview_btn{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    align-self: center;
+    font-size: 0.6rem;
+    }
+    .sourcecode_btn{
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        align-self: center;
+        font-size: 0.6rem;
+    }
+    /*                            */
 
     /* container_3 */
+    
+    .inside_container_3{
+        padding-top: 0.5rem;
+    }
+    .mycont_tile{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-bottom: 0;
+    }
+    .mycont_tile h2{
+        font-size: 1.1rem;
+    }
+
     .contact_text{
-    margin-top: 2.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .contact_text{
+    margin-top: 2rem;
     }
     .form_input{
         display: grid;
@@ -1135,7 +1205,7 @@ margin-top: 3.5rem;
     }
 
 
-    /* Navigator of About me */
+    
 }
 /* another mobile resolution */
 @media(max-width: 430px){
@@ -1153,54 +1223,6 @@ margin-top: 3.5rem;
         font-size: 2rem;
     }
 
-   /* container 2 */
-    .inside_container_2{
-        padding-top: 6rem;
-    }
-    .myproj_title{
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        margin-bottom: 0;
-    }
-    .myproj_title h2{
-        font-size: 1.1rem;
-    }
-    .inside_proj_1{
-        max-width: 560px;
-    }
-    .inside_proj_1 img{
-        margin-top: -1rem;
-        border-width: 0.5rem;
-        width: 100%;
-    }
-    .myproj_img1 h2{
-        margin-top: 1.5rem;
-    }
-    .description_proj p{
-        margin-top: 0.2rem;
-    }
-
-    /* Container 3 */
-
-    .inside_container_3{
-        padding-top: 6rem;
-    }
-    .mycont_tile{
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        margin-bottom: 0;
-    }
-    .mycont_tile h2{
-        font-size: 1.1rem;
-    }
-
-    .contact_text{
-        margin-top: 0.5rem;
-    }
     
 }
 
@@ -1280,7 +1302,7 @@ margin-top: 3.5rem;
         margin-bottom: 0;
     }
     .profile_pic img{
-        margin-top: 1rem;
+        margin-top: 4rem;
         border-radius: 25rem;
         border: solid grey;
         width: 10rem;
@@ -1343,46 +1365,37 @@ margin-top: 3.5rem;
     /*  */
 
     /* Container 2 */
-    .inside_container_2{
-        padding-top: 7rem;
+    .container_2{
+        padding-top: 6rem;
     }
+
     .myproj_title{
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         margin-bottom: 0;
     }
     .myproj_title h2{
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
-    .inside_proj_1{
-        width: 100%;
-    }
-    .inside_proj_1 img{
-        margin-top: -1rem;
-        border-width: 0.5rem;
-        width: 23rem;
-        text-align: center;
-    }
-    .description_proj p{
-        margin-top: 0.2rem;
-    }
+    
     /*  */
 
     /* Container 3 */
-    .inside_container_3{
+    .container_3{
         padding-top: 6rem;
     }
+
     .mycont_tile{
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         margin-bottom: 0;
     }
     .mycont_tile h2{
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
     .contact_text p{
         margin-top: 0.3rem;
@@ -1416,7 +1429,9 @@ margin-top: 3.5rem;
     .inside_div_form{
         align-self: first baseline;
         row-gap: 1.3rem;
+        width: 15rem;
     }
+    
     .inside_div_form input{
         padding: 0.2rem;
         font-size: 0.9rem;
@@ -1438,3 +1453,36 @@ margin-top: 3.5rem;
 
 
 }
+
+#home_anim{
+    position: fixed;
+    top: 15rem;
+    z-index: 5;
+    visibility: hidden;
+    cursor: pointer;
+    background-color: orangered;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.3rem; 
+    padding-right: 0.3rem;
+    border-radius: 6px;
+    transition: visibility 1s, opacity 0.5s linear;
+    opacity: 0; 
+}
+#home_anim a{
+    display: flex;
+}
+#home_anim h3{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1rem;
+}
+#home_anim i{
+    font-size: 2rem;
+    align-self: center;
+    color: white;
+}
+
+
+
+    

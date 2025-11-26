@@ -7,6 +7,7 @@ var nav_smallboxbtn = document.getElementById("smallbox");
 var nav_smallboxbtn1 = document.getElementById("smallbox1");
 var nav_smallboxbtn2 = document.getElementById("smallbox2");
 var nav_smallboxbtn3 = document.getElementById("smallbox3");
+var openbtn = document.getElementById("home_direct");
 
 function scrollFunction(){
     if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
@@ -17,12 +18,19 @@ function scrollFunction(){
         document.getElementById("smallbox1"). style.padding = "5px 20px";
         document.getElementById("smallbox2"). style.padding = "5px 20px";
         document.getElementById("smallbox3"). style.padding = "5px 20px";
+        document.getElementById("home_anim").style.visibility = "visible";        
+        document.getElementById("home_anim").style.opacity = "1";
+        
+        
     } else{
         document.getElementById("nav_id").style.padding = "30px 10px";
         document.getElementById("smallbox").style.padding = "10px 25px";
         document.getElementById("smallbox1").style.padding = "10px 25px";
         document.getElementById("smallbox2").style.padding = "10px 25px";
         document.getElementById("smallbox3").style.padding = "10px 25px";
+        document.getElementById("home_anim").style.visibility = "hidden";
+        document.getElementById("home_anim").style.opacity = "0";
+        document.getElementById("home_anim").style.transition = "visibility 1s, opacity 0.5s linear";
         // nav_barsmull.style.padding = "20px 10px";
     } 
 }
@@ -33,9 +41,8 @@ function direct_to_project(){
         block: "start",
         inline: "start"
     });
+    
 }
-
-
 
 function direct_to_contactme(){
     const scrolltocontactme = document.getElementById("im_the_contactme");
@@ -46,24 +53,28 @@ function direct_to_contactme(){
     });
 }
 
+function home(){
+    const scrolltohome = document.getElementById("im_the_home");
+    scrolltohome.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "start"
+    });
+}
+
 
 
 
 var body = document.body;
-
 function direct_to_aboutme(){
     document.getElementById("nav_aboutme_id").style.width = "100%";
     body.classList.toggle("dont_scroll");
 }
 
-
-
 function close_nav(){
     document.getElementById("nav_aboutme_id").style.width = "0%";
     
 }
-
-
 
 
 
@@ -110,10 +121,6 @@ hoverArea.addEventListener('mouseleave', () =>{
 randomTextDisplay.style.display = 'none';
 });
 });
-
-
-// aos animation
-
 
 
 
