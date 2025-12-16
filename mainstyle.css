@@ -510,12 +510,13 @@ body.dont_scroll{
 }    */
 
 .profile_pic{
-    min-width:700px;
+    min-width: 700px;
     text-align: center;
     align-self:last baseline;
+    
 }
 .profile_pic img{
-    width: 76%;
+    width: 80%;
   -webkit-filter: drop-shadow(5px 5px 5px #111111);
   filter: drop-shadow(5px 0px 15px #242323);
 }
@@ -1227,11 +1228,16 @@ margin-top: 3.5rem;
 }
 
 
+
+
+
+
+
 /* Laptop */
-@media screen and (min-width: 360px) and (max-width: 1272px) and (-webkit-min-device-pixel-ratio: 1) and (min-resolution: 102dpi){
+@media only screen and (max-width: 1280px) and (min-resolution: 102dpi){ 
  
     .profile_pic{
-        min-width: 470px;
+        min-width: 450px;
     }
 
     .profile_pic img{
@@ -1292,7 +1298,7 @@ margin-top: 3.5rem;
     }
 
     /* ---for laptop woking only---- */
-    @media screen and (min-width: 360px) and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1) and (min-resolution: 102dpi){
+    @media screen and (min-width: 360px) and (min-height: 100px) and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1){
         .inside_container_1{
         display: grid;
         row-gap: 0.2rem;
@@ -1454,6 +1460,11 @@ margin-top: 3.5rem;
 
 }
 
+
+
+
+
+
 #home_anim{
     position: fixed;
     top: 15rem;
@@ -1485,4 +1496,9 @@ margin-top: 3.5rem;
 
 
 
-    
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="resolutiontest.css">
+</head>
+<body>
+    <div class="container_1">
+        <div class="inside_container_1">
+            <div class="con1_box">
+                <img src="images/container_1/2x2_Edwardss.png">
+            </div>
+
+            <div class="con1_box1">
+                <h1>Testing different resolutions</h1>
+                <h3>This page is to test how different resolutions affect the design of the website.
+                Resize the window to see how it changes!</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="sizelang">
+        <h2>My current size of web</h2>
+        <p id="demo"></p>
+    </div>
+    <script>
+        var w = window.innerWidth;
+        var h = window.innerHeight;
+
+        var x = document.getElementById("demo");
+        x.innerHTML = "Width: " + w + "px" + "<br>" + "Height: " + h + "px";
+    </script>
+</body>
+</html>
